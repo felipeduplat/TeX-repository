@@ -1,0 +1,141 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% MODELO DE CURRÍCULO - FELIPE DUPLAT LUZ %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Classe:
+\documentclass[10pt,a4paper]{curriculo}
+
+%% Para símbolos:
+% texdoc.net/pkg/fontawecome
+% http://texdoc.net/pkg/academicons
+
+%% Se compilar com XeLaTeX, deve-se inserir o Academicons.ttf na pasta de fontes do sistema
+
+%% Configurações da página:
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=0.8cm,top=1cm,bottom=1cm}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Pacotes utilizados:
+%\usepackage[utf8]{inputenc} % se compila com pdflatex
+%\usepackage[T1]{fontenc}    % se compila com pdflatex
+%\usepackage[default]{lato}  % se compila com pdflatex
+\setmainfont{Lato}           % se compila com xelatex
+\usepackage{academicons}     % habilitar ícones acadêmicos
+\usepackage{hyperref}        % habilitar hyperlink
+
+%% Alterar as cores:
+\definecolor{VividPurple}{HTML}{2E64FE}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%% Inserir publicações:
+\addbibresource{publicacoes.bib}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% DOCUMENTO COMEÇA A PARTIR DAQUI:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\name{Felipe Duplat Luz}
+\tagline{}
+\photo{2.5cm}{Imagens/001.jpg}
+\personalinfo{
+  % pode inserir os próprios com \printinfo{symbol}{detail}
+  \phone{+55 71 99729-1441}
+  \location{Rua Cândido Lopes, 364 - Curitiba/PR} \\
+  \email{\href{mailto:duplat.f@gmail.com}{duplat.f@gmail.com}}
+  \printinfo{\aiLattes}{\href{http://lattes.cnpq.br/7966980343097478}{Felipe Duplat Luz}}
+  \orcid{\href{https://orcid.org/0000-0002-5808-1611}{Felipe Duplat}}
+  \linkedin{\href{https://www.linkedin.com/in/felipeduplat/}{felipeduplat}}
+}
+
+%% Cabeçalho se estender durante toda a extensão da direita - 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-7.6cm}
+\makecvheader
+\end{adjustwidth}
+
+
+
+%% EXPERIÊNCIA
+\cvsection[coluna]{Experiência}
+
+\cvevent{\small Estagiário}{Federação das Indústrias do Estado da Bahia (FIEB)}{out 20 -- mar 22}{Salvador/BA}
+\begin{itemize}
+\item Elaboração de relatórios técnicos sobre a Construção Civil na Bahia e apresentação de conjuntura;
+\item Tratamento de dados do Novo Caged e RAIS;
+\item Elaboração de \textit{dashboards} e painéis interativos.
+\end{itemize}
+
+\divider
+
+\cvevent{\small Estagiário}{Companhia de Desenvolvimento e Ação Regional (CAR)}{mar 19 -- ago 19}{Salvador/BA}
+\begin{itemize}
+\item Análise e monitoramento dos projetos de inclusão socioprodutiva;
+\item Criação e alimentação de base de dados;
+\item Elaboração de relatórios técnicos e apresentação de resultados parciais.
+\end{itemize}
+
+\divider
+
+\cvevent{\small Estagiário}{Superintendência de Estudos Econômicos e Sociais da Bahia (SEI)}{jul 16-- jan 17}{Salvador/BA}
+\begin{itemize}
+	\item Elaboração de relatórios mensais sobre o desemprego na cidade de Salvador e região metropolitana;
+	\item Elaboração de relatórios especiais sobre determinados grupos  (jovens, idosos, mulheres e negros);
+	\item Análise de eficiência dos pesquisadores.
+\end{itemize}
+
+
+
+%% EDUCAÇÃO
+\cvsection{Educação}
+
+\cvevent{\small Mestrado em Desenvolvimento Econômico}{Universidade Federal do Paraná (UFPR)}{mar 22 -- atual}{Curitiba/PR}
+
+\divider
+
+\cvevent{\small Graduação em Ciências Econômicas}{Universidade Federal da Bahia (UFBA)}{jun 16 -- dez 21}{Salvador/BA}
+
+\divider
+
+\cvevent{\small Intercâmbio Acadêmico em Economia}{Universidade de Santiago de Compostela (USC)}{ago 19 -- jun 20}{Santiago de Compostela/ESP}
+
+
+
+%% PUBLICAÇÔES
+\cvsection{Publicações}
+
+\textbf{Apresentação de trabalho} - Análise da Desigualdade de Renda no Estado da Bahia entre Brancos e Negros, VIII Semana de Estudos Socioeconômicos 2018 - UEFS
+
+
+
+%% ATIVIDADES EXTRACURRICULARES
+\clearpage
+\cvsection{Atividades extracurriculares}
+
+\cvachievement{\faUniversity}{Atlética de Economia da UFBA}{Vice-presidente (2019-2020)}
+
+\divider
+
+\cvachievement{\faUniversity}{Diretório Acadêmico Plínio Moura}{Diretor Político (2016) e Diretor Geral (2017-2019)}
+
+\divider
+
+\cvachievement{\faBook}{Biblioteca Central do Estado da Bahia}{Leitor para cegos (2014-2016)}
+
+\end{document}
+
+

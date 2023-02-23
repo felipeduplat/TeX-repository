@@ -1,0 +1,89 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% UNIVERSIDADE FEDERAL DO PARANÁ (UFPR)
+% SETOR DE CIÊNCIAS SOCIAIS APLICADAS
+% PÓS-GRADUAÇÃO EM DESENVOLVIMENTO ECONÔMICO (PPGDE)
+% DISCENTE: FELIPE DUPLAT LUZ
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% TRABALHO DE CONCLUSÃO DE CURSO (MONOGRAFIA, DISSERTAÇÃO OU TESE) %%%%%%
+
+
+% ----------------------------------------------------------
+% DADOS DO TRABALHO
+% ----------------------------------------------------------
+
+\instituicao{nome do programa, nome da universidade}
+\unidade{NOME DO SETOR \\ NOME DO PROGRAMA}
+\unidademin{nome do setor, nome do programa}
+\universidademin{nome da universidade}
+
+
+% Gerar folha de rosto:
+\notafolharosto{}
+
+
+% Dados para capa e folha de rosto:
+\universidade{NOME DA UNIVERSIDADE}
+\titulo{T\'ITULO DA DISSERTA\c{C}\~AO}
+\titleabstract{TITLE OF DISSERTATION}
+\tituloresumo{T\'itulo da disserta\c{C}\~ao}
+\autor{NOME DO AUTOR}
+\autorficha{SOBRENOME, NOME DO AUTOR}
+\autorabr{SOBRENOME, NOME ABREVIADO}
+
+\cutter{S856m} % com o código cutter.
+%\cutter{ }    % sem o código cutter.
+
+\local{CIDADE}
+\data{\year}
+
+%\renewcommand{\orientadorname}{Orientadora:}  % ativar se orientadorA
+\orientador{ORIENTADOR(A)}
+\orientadorcorpoficha{Orientador(a)}
+\orientadorficha{Orientador(a)}
+\coorientador{Co-orientador(a)}
+\orientadorcorpoficha{Co-orientador(a)}
+\orientadorficha{Co-orientador(a)}
+%\notaautorizacao{}
+%\notabib{~  ~}
+
+
+
+% ----------------------------------------------------------
+% DEFINIÇÃO DOS CURSOS
+% ----------------------------------------------------------
+
+\newcommand{\curso}[1]{
+
+% Se graduação:
+\ifthenelse{\equal{#1}{grad}}{
+	\tipotrabalho{Monografia (Graduação)}
+	\tipotrabalhoabs{Monography (Bachelor)}
+	\area{}
+	%\opcao{Nome da Opção}
+	\preambulo{Monografia apresentada como requisito parcial para obten\c{c}\~ao do t\'itulo de Bacharel em [Curso] pela [Universidade]\\}
+	\notaficha{Monografia (Graduação) -- [Universidade], [\'Area]}
+}{
+
+% Se mestrado:
+\ifthenelse{\equal{#1}{mest}}{
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado)}
+	\tipotrabalhoabs{Dissertation (Master)}
+	\area{Com\'ercio Internacional}
+	\preambulo{Disserta\c{c}\~ao apresentada como requisito parcial para obten\c{c}\~ao do t\'itulo de Mestre em [TÍTULO] pelo [Programa] da [Universidade].\\}
+	\notaficha{Disserta\c{c}\~ao (Mestrado) -- [Programa], [\'Area]}
+}{
+
+% Se doutorado:
+\ifthenelse{\equal{#1}{doc}}{
+	\tipotrabalho{Tese (Doutorado)}
+	\tipotrabalhoabs{Thesis (PhD)}
+	\area{}
+	\preambulo{Tese apresentada como requisito parcial para obten\c{c}\~ao do t\'itulo de Doutor em [] pelo [programa] da [Universidade].\\}
+	\notaficha{Tese (Doutorado) -- [Programa], [\'Area]}
+}}}}
+
+

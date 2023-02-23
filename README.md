@@ -34,7 +34,7 @@ Feito para realização de atividades mais simples da Universidade, como: listas
 
 <!-- [em progresso]. -->
 
-#### Slide - UFPR:
+#### Slide:
 
 Feito para apresentação de artigos e trabalhos acadêmicos.
 
@@ -53,7 +53,7 @@ Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc
 
 Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**.
 
-<!-- #### Slide - institucional: -->
+<!-- #### Slide: -->
 
 <!-- Feito para apresentações voltadas ao mercado de trabalho. -->
 

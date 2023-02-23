@@ -10,6 +10,14 @@ Um repositório com o objetivo de compartilhar os _templates_ que elaborei no La
 
 ## :books: Conteúdo
 
+### Artigo
+
+[em progesso].
+
+### Carta de apresentação
+
+[em progesso].
+
 ### Currículo
 
 Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**.
@@ -18,9 +26,19 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 
 Feito para realização de atividades mais simples da Universidade, como: listas de exercício, ensaios, etc.
 
-### Slide
+### Pôster
+
+[em progesso].
+
+### Slides
+
+#### - Modelo 01
 
 Feito para apresentação de artigos e trabalhos acadêmicos. 
+
+#### - Modelo 02
+
+Elaborado para apresentações voltadas ao mercado de trabalho. 
 
 ### TCC
 

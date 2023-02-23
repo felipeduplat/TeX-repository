@@ -29,8 +29,8 @@ Texto.
 ## Futuras adições
 
 - [ ] Artigo
-- [ ] Carta de motivação
-- [ ] A
+- [ ] Carta de apresentação
+- [ ] Pôster
 
 ## Contribuições
 

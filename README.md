@@ -6,7 +6,7 @@
 
 ## :loudspeaker: Descrição
 
-Um repositório com o objetivo de compartilhar os _templates_ que elaborei no LaTeX para as atividades do PPGDE-UFPR. 
+Um repositório com o objetivo de compartilhar os _templates_ que elaborei no LaTeX para as atividades do PPGDE-UFPR e também para processos seletivos - dentro ou fora da Academia.
 
 ## :books: Conteúdo
 

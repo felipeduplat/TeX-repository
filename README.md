@@ -22,17 +22,17 @@ Um repositório com o objetivo de compartilhar os _templates_ que elaborei no La
 <!-- Academia -->
 ### :mortar_board: Academia
 
-#### Artigo:
+<!-- #### Artigo: -->
 
-[em progresso].
+<!-- [em progresso]. -->
 
 #### Lista:
 
 Feito para realização de atividades mais simples da Universidade, como: listas de exercício, ensaios, etc.
 
-#### Pôster:
+<!-- #### Pôster: -->
 
-[em progresso].
+<!-- [em progresso]. -->
 
 #### Slide - UFPR:
 
@@ -47,29 +47,29 @@ Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc
 
 
 <!-- Mercado -->
-### :office_worker: Mercado
+### :briefcase: Mercado
 
 #### Currículo:
 
 Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**.
 
-#### Slide - institucional:
+<!-- #### Slide - institucional: -->
 
-Feito para apresentações voltadas ao mercado de trabalho.
+<!-- Feito para apresentações voltadas ao mercado de trabalho. -->
 
-#### Carta de apresentação:
+<!-- #### Carta de apresentação: -->
 
-[em progresso].
+<!-- [em progresso]. -->
 
 
 
 <!-- Bloco 02 - calendário -->
 ## :calendar: Futuras implementações
 
-- [ ] Artigo
-- [ ] Slide nº 02
-- [ ] Carta de apresentação
-- [ ] Pôster
+- [ ] :mortar_board: artigo
+- [ ] :briefcase:    slide institucional
+- [ ] :briefcase:    carta de apresentação
+- [ ] :mortar_board: pôster
 
 
 

@@ -26,6 +26,12 @@ Texto.
 
 Texto.
 
+## Futuras adições
+
+- [ ] Artigo
+- [ ] Carta de motivação
+- [ ] A
+
 ## Contribuições
 
 Dúvidas, sugestões e críticas podem ser direcionadas ao meu e-mail (duplat.f@gmail.com).

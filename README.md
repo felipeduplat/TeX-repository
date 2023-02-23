@@ -16,17 +16,11 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 
 ### Lista
 
-Feito para realização de atividades mais simples da Universidade, como: 
-
-1. listas de exercícios;
-2. ensaios;
-3. redações;
-4. ;
-5. etc.
+Feito para realização de atividades mais simples da Universidade, como listas de exercício, ensaios, etc.
 
 ### Slide
 
-Texto.
+Feito para apresentação de artigos e trabalhos acadêmicos. 
 
 ### TCC
 

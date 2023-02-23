@@ -4,11 +4,11 @@
 
 **Um repositório contendo _todos_ os meus templates feitos no LaTeX.**
 
-## Descrição
+## :loudspeaker: Descrição
 
 Texto.
 
-## Conteúdo
+## :books: Conteúdo
 
 ### Currículo
 
@@ -26,12 +26,12 @@ Texto.
 
 Texto.
 
-## Futuras adições
+## :calendar: Futuras adições
 
 - [ ] Artigo
 - [ ] Carta de apresentação
 - [ ] Pôster
 
-## Contribuições
+## :mailbox_with_mail: Contribuições 
 
 Dúvidas, sugestões e críticas podem ser direcionadas ao meu e-mail (duplat.f@gmail.com).

@@ -1,4 +1,4 @@
-![latex](/Documentos/Download/002.png)
+![latex](001.png)
 
 # TeX-Repository
 

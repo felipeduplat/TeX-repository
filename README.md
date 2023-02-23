@@ -22,23 +22,23 @@ Um repositório com o objetivo de compartilhar os _templates_ que elaborei no La
 <!-- Academia -->
 ### :mortar_board: Academia
 
-#### Artigo
+#### Artigo:
 
 [em progresso].
 
-#### Lista
+#### Lista:
 
 Feito para realização de atividades mais simples da Universidade, como: listas de exercício, ensaios, etc.
 
-#### Pôster
+#### Pôster:
 
 [em progresso].
 
-#### Slide - UFPR
+#### Slide - UFPR:
 
 Feito para apresentação de artigos e trabalhos acadêmicos.
 
-#### TCC
+#### TCC:
 
 Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc-modelo-para-teses-e-dissertacoes-em-latex/), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado da UFPR. Para escolher entre um dos três, basta alterar a linha do _script_.
 
@@ -49,15 +49,15 @@ Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc
 <!-- Mercado -->
 ### :office_worker: Mercado
 
-#### Currículo
+#### Currículo:
 
 Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**.
 
-#### Slide - institucional
+#### Slide - institucional:
 
 Feito para apresentações voltadas ao mercado de trabalho.
 
-#### Carta de apresentação
+#### Carta de apresentação:
 
 [em progresso].
 

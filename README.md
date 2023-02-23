@@ -1,4 +1,4 @@
-![capa](001.png)
+![latex](https://github.com/felipeduplat/private/blob/7590f0cb1c87be0f053830d160bc0d09d4ee5888/001.png)
 
 # TeX-Repository
 

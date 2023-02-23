@@ -1,0 +1,141 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% UNIVERSIDADE FEDERAL DO PARANÁ (UFPR)
+% PÓS-GRADUAÇÃO EM DESENVOLVIMENTO ECONÔMICO (PPGDE)
+% FACULDADE DE ECONOMIA
+% DISCENTE: FELIPE DUPLAT LUZ
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% TRABALHO ACADÊMICO - PPGDE UFPR %%%%%%
+
+% Classe:
+\documentclass[a4paper, 11pt]{article}
+
+
+% Pacotes utilizados:
+\usepackage[brazil]{babel}             % manter em PT-BR.
+\usepackage{tikz}                      % fazer o cabeçalho.
+\usepackage{fancyhdr}                  % fazer o rodapé.
+\usepackage{titlesec}                  % automatizar as seções.
+\usepackage[style = abnt-numeric,      % manter formato ABNT.
+			giveninits,                % manter primeiros nomes abreviados.
+			scbib                      % manter em versalete.
+		   ]{biblatex}                 % adicionar referências.
+
+
+% Configurações do documento:
+\usepackage[bindingoffset=0.2in,
+			left=1in,
+			right=1in,
+			top=1in,
+			bottom=1in,
+			footskip=.25in]{geometry}
+\setlength{\textwidth}{18cm} 
+\setlength{\oddsidemargin}{-1cm}
+
+
+% Referências:
+\addbibresource{Referências.bib}
+
+
+% Cabeçalho:
+\setlength\parindent{0pt}
+\begin{document}
+	
+	% linha superior:
+	\begin{tikzpicture}
+		\draw[thick] (-6.5,0)--(10,0);
+	\end{tikzpicture}
+	
+	\colorbox{white!10!}{
+		\begin{minipage}[l]{0.169 \textwidth}
+			\begin{flushleft}
+				\includegraphics[width=1.1in,height=0.85in]{./Imagens/logo_UFPR.png}
+			\end{flushleft}
+		\end{minipage}
+		\begin{minipage}[l]{0.75 \textwidth}
+			\begin{flushleft}
+				{\large \textsc{Universidade Federal do Paraná - Faculdade de Economia}}
+				\\
+				{\large \textsc{Pós Graduação em Desenvolvimento Econômico}}
+				\\
+				\large \textsc{DECO0000 - []}
+				\\
+				\large \textsc{Docente: []}
+				\\
+				\large \textsc{Discente: Felipe Duplat Luz}
+			\end{flushleft}
+		\end{minipage}
+	}
+	
+	% linha inferior:
+	\begin{tikzpicture}
+		\draw[thick] (-6.5,0)--(10,0);
+	\end{tikzpicture}
+
+
+% Rodapé:
+\fancyhf{}
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0.1mm}
+\renewcommand{\headrulewidth}{0.0mm}
+\fancyfoot[R]{\thepage}
+
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\renewcommand{\footrulewidth}{0.1mm}
+	\fancyfoot[R]{\thepage}
+	\renewcommand{\headrulewidth}{empty}}
+
+
+% Automatização das seções:
+\titleformat{\section}{\large\bfseries}{\underline{Questão \thesection}}{0.1cm}{}[]
+
+
+%% Inserir todas as referências:
+\nocite{sotomayor21, dolevchenko09}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% TEXTO COMEÇA A PARTIR DAQUI:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Título do trabalho:
+	\begin{center}
+		\huge [título do trabalho]
+	\end{center}
+
+% Questão 01:
+\section{}
+
+[texto]
+
+
+% Questão 02:
+\section{}
+
+[texto]
+
+
+% Questão 03:
+\section{}
+
+[texto]
+
+
+
+% Referências:
+\pagebreak
+\printbibliography[title={\underline{Referências:}}]
+
+\end{document}
+
+

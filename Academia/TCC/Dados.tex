@@ -1,0 +1,89 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% UNIVERSIDADE FEDERAL DO PARANÁ (UFPR)
+% SETOR DE CIÊNCIAS SOCIAIS APLICADAS
+% PÓS-GRADUAÇÃO EM DESENVOLVIMENTO ECONÔMICO (PPGDE)
+% DISCENTE: FELIPE DUPLAT LUZ
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% TRABALHO DE CONCLUSÃO DE CURSO (MONOGRAFIA, DISSERTAÇÃO OU TESE) %%%%%%
+
+
+% ----------------------------------------------------------
+% DADOS DO TRABALHO
+% ----------------------------------------------------------
+
+\instituicao{P\'os Gradua\c{c}\~ao em Desenvolvimento Econ\^omico, Universidade Federal do Paran\'a}
+\unidade{SETOR DE CI\^ENCIAS SOCIAIS APLICADAS \\ P\'OS GRADUA\c{C}\~AO EM DESENVOLVIMENTO ECON\^OMICO}
+\unidademin{Setor de Ci\^encias Sociais Aplicadas, P\'os Gradua\c{c}\~ao em Desenvolvimento Econ\^omico}
+\universidademin{Universidade Federal do Paran\'a}
+
+
+% Gerar folha de rosto:
+\notafolharosto{}
+
+
+% Dados para capa e folha de rosto:
+\universidade{UNIVERSIDADE FEDERAL DO PARAN\'A}
+\titulo{T\'ITULO DA DISSERTA\c{C}\~AO}
+\titleabstract{TITLE OF DISSERTATION}
+\tituloresumo{T\'itulo da disserta\c{C}\~ao}
+\autor{FELIPE DUPLAT LUZ}
+\autorficha{Luz, Felipe Duplat}
+\autorabr{DUPLAT, F.}
+
+\cutter{S856m} % com o código cutter.
+%\cutter{ }    % sem o código cutter.
+
+\local{Curitiba}
+\data{2024}
+
+%\renewcommand{\orientadorname}{Orientadora:}  % ativar se orientadorA
+\orientador{Vin\'icius de Almeida Vale}
+%\orientadorcorpoficha{Vin\'icius de Almeida Vale}
+%\orientadorficha{Vale, Vin\'icius de Almeida}
+\coorientador{K\^enia Barreiro de Souza}
+\orientadorcorpoficha{orientador Vin\'icius de Almeida Vale; co-orientadora K\^enia Barreiro de Souza}
+\orientadorficha{Vale, Vin\'icius de Almeida, orient. II. Souza, K\^enia Barreiro de, co-orient}
+%\notaautorizacao{}
+%\notabib{~  ~}
+
+
+
+% ----------------------------------------------------------
+% DEFINIÇÃO DOS CURSOS
+% ----------------------------------------------------------
+
+\newcommand{\curso}[1]{
+
+% Se graduação:
+\ifthenelse{\equal{#1}{grad}}{
+	\tipotrabalho{Monografia (Graduação)}
+	\tipotrabalhoabs{Monography (Bachelor)}
+	\area{}
+	%\opcao{Nome da Opção}
+	\preambulo{Monografia apresentada como requisito parcial para obten\c{c}\~ao do t\'itulo de Bacharel em [Curso] pela [Universidade]\\}
+	\notaficha{Monografia (Graduação) -- [Universidade], [Area]}
+}{
+
+% Se mestrado:
+\ifthenelse{\equal{#1}{mest}}{
+	\tipotrabalho{Disserta\c{c}\~ao (Mestrado)}
+	\tipotrabalhoabs{Dissertation (Master)}
+	\area{Com\'ercio Internacional}
+	\preambulo{Disserta\c{c}\~ao apresentada como requisito parcial para obten\c{c}\~ao do t\'itulo de Mestre em Desenvolvimento Econ\^omico pelo Programa de P\'os-Gradua\c{c}\~ao em Desenvolvimento Econ\^omico da Universidade Federal do Paran\'a.\\}
+	\notaficha{Disserta\c{c}\~ao (Mestrado) -- Programa de P\'os-Gradua\c{c}\~ao em Desenvolvimento Econ\^omico, \'Area de Concentra\c{c}\~ao em Com\'ercio Internacional}
+}{
+
+% Se doutorado:
+\ifthenelse{\equal{#1}{doc}}{
+	\tipotrabalho{Tese (Doutorado)}
+	\tipotrabalhoabs{Thesis (PhD)}
+	\area{}
+	\preambulo{Tese apresentada como requisito parcial para obten\c{c}\~ao do t\'itulo de Doutor em [] pelo [programa] da [Universidade].\\}
+	\notaficha{Tese (Doutorado) -- [Programa], [Area]}
+}}}}
+
+

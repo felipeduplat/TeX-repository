@@ -29,6 +29,7 @@ Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc
 ## :calendar: Futuras adições
 
 - [ ] Artigo
+- [ ] Slide 02
 - [ ] Carta de apresentação
 - [ ] Pôster
 

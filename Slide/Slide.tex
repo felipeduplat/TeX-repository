@@ -1,0 +1,190 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% UNIVERSIDADE FEDERAL DO PARANÁ (UFPR)
+% SETOR DE CIÊNCIAS SOCIAIS APLICADAS
+% PÓS-GRADUAÇÃO EM DESENVOLVIMENTO ECONÔMICO (PPGDE)
+% DISCENTE: FELIPE DUPLAT LUZ
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% APRESENTAÇÃO DE SLIDES %%%%%%
+
+% Classe:
+\documentclass[aspectratio=169, 9pt]{beamer}
+
+
+% Pacotes utilizados:
+\usetheme{Darmstadt}                   % tema do slide                           
+\usecolortheme{beaver}                 % cor do tema do slide
+\usepackage[style = abnt,              % manter formato ABNT
+            giveninits,                % manter primeiros nomes abreviados
+            scbib                      % manter em versalete
+           ]{biblatex}                 % adicionar referências
+\usepackage{tikz}                      % fazer o cabeçalho
+\usepackage[brazil]{babel}             % manter em PT-BR
+\usepackage{fontawesome}               % habilitar ícones sociais
+\usepackage{academicons}               % habilitar ícones acadêmicos
+
+
+% Configurações do beamer:
+\setbeamertemplate{section in toc}[sections numbered]  % criar lista de conteúdo
+\setbeamertemplate{caption}[numbered]                  % numerar as legendas
+\setbeamerfont{caption}{size=\small}                   % tamanho da fonte das legendas
+\setbeamerfont{footnote}{size=\small}                  % tamanho da fonte do rodapé
+\setbeamerfont{footnotemark}{size=\small}              % tamanho da fonte das notas de rodapé
+\setbeamercovered{transparent}                         % tornar bullet points transparentes
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=4.5ex,dp=2.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=4.5ex,dp=2.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}
+    \usebeamerfont{title in head/foot}
+    \parbox{.45\paperwidth}{\insertshorttitle\hfill \insertframenumber\,/\,\inserttotalframenumber}
+  \end{beamercolorbox}}
+  \vskip0pt%
+}
+
+
+% Referências:
+\addbibresource{Referências.bib}
+
+
+% Informações da capa:
+\title[short-title]{Título da apresentação}
+\author[Nome do autor]{DECO0000 - Matéria \\ Prof. XXXX}
+%\subtitle{}
+\institute[] % (optional)
+{
+    \vspace{0.5mm} {\normalsize Nome do autor} \vspace{5mm}
+}
+\date{XX de XXXX de \the\year{}}
+
+% Cabeçalho:
+\begin{document}
+
+\begin{frame}[plain]
+    \begin{center}
+            \begin{minipage}[c]{0.2\linewidth}
+                    \begin{center}
+                    \includegraphics[width=2cm, height=1.7cm]{./Imagens/logo_UFPR.png} 
+                    \end{center}
+            \end{minipage}
+            \begin{minipage}[c]{0.7\linewidth}
+                    \begin{flushleft}
+                    \begin{large}
+                    Nome da Universidade \\ \vspace{1mm} Nome do Setor\\
+                    \vspace{1mm} Nome do Programa
+                    \end{large} 
+                    \end{flushleft}
+            \end{minipage}
+    \end{center}
+\titlepage 
+\end{frame}
+
+
+% Slide de conteúdos:
+\begingroup
+\setbeamertemplate{headline}{}
+\addtobeamertemplate{frametitle}{\vspace*{-\headheight}}{}
+\begin{frame}{Sumário}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+\endgroup
+
+
+% Transição entre seções:
+\AtBeginSection[]
+{
+	\begin{frame}{Sumário}
+		\tableofcontents[currentsection, subsectionstyle=show/show/hide]
+	\end{frame}
+}
+
+
+% Incluir todas as referências:
+\nocite{*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% DOCUMENTO COMEÇA A PARTIR DAQUI:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Primeira seção:
+\section{Seção 01}
+
+\subsection[]{Subseção 01}
+
+\begin{frame}{Subseção 01}
+	\begin{itemize}[<+->]
+		\item texto
+		\item 
+	\end{itemize}
+\end{frame}
+
+
+\subsection[]{Subseção 02}
+
+\begin{frame}{Subseção 02}
+	\begin{itemize}[<+->]
+		\item texto
+		\item 
+	\end{itemize}
+\end{frame}
+
+
+
+% Segunda seção:
+\section{Seção 02}
+
+\subsection[]{Subseção 02}
+
+\begin{frame}{Subseção 02}
+	\begin{itemize}[<+->]
+		\item texto
+		\item 
+	\end{itemize}
+\end{frame}
+
+
+
+% Terceira seção:
+\section{Seção 03}
+
+\subsection[]{Subseção 03}
+
+\begin{frame}{Subseção 03}
+	\begin{itemize}[<+->]
+		\item texto
+		\item 
+	\end{itemize}
+\end{frame}
+
+
+
+% Referências:
+\begin{frame}{Referências}
+\printbibliography
+\end{frame}
+
+
+\begin{frame}
+	\begin{center}
+			\textbf{Obrigado!} \\
+			\vspace{0.5cm}
+			
+			\begin{tabular}{l}
+				\faAt \hspace{0.001mm} \href{mailto:duplat.f@gmail.com}{duplat.f@gmail.com} \\
+				\faLinkedin \hspace{0.001mm} \href{https://www.linkedin.com/in/felipeduplat/}{felipeduplat}
+			\end{tabular}
+		\end{center}
+\end{frame}
+
+\end{document}
+
+

@@ -1,0 +1,141 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% MODELO DE CURRÍCULO - FELIPE DUPLAT LUZ %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Classe:
+\documentclass[10pt,a4paper]{curriculo}
+
+%% Para símbolos:
+% texdoc.net/pkg/fontawecome
+% http://texdoc.net/pkg/academicons
+
+%% Se compilar com XeLaTeX, deve-se inserir o Academicons.ttf na pasta de fontes do sistema
+
+%% Configurações da página:
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=0.8cm,top=1cm,bottom=1cm}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Pacotes utilizados:
+%\usepackage[utf8]{inputenc} % se compila com pdflatex
+%\usepackage[T1]{fontenc}    % se compila com pdflatex
+%\usepackage[default]{lato}  % se compila com pdflatex
+\setmainfont{Lato}           % se compila com xelatex
+\usepackage{academicons}     % habilitar ícones acadêmicos
+\usepackage{hyperref}        % habilitar hyperlink
+
+%% Alterar as cores:
+\definecolor{VividPurple}{HTML}{2E64FE}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%% Inserir publicações:
+\addbibresource{publicacoes.bib}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% DOCUMENTO COMEÇA A PARTIR DAQUI:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\name{Felipe Duplat Luz}
+\tagline{}
+\photo{2.5cm}{Imagens/001.jpg}
+\personalinfo{
+  % pode inserir os próprios com \printinfo{symbol}{detail}
+  \phone{+55 71 99729-1441}
+  \location{Cândido Lopes Street, 364 - Curitiba/PR} \\
+  \email{\href{mailto:duplat.f@gmail.com}{duplat.f@gmail.com}}
+  \printinfo{\aiLattes}{\href{http://lattes.cnpq.br/7966980343097478}{Felipe Duplat Luz}}
+  \orcid{\href{https://orcid.org/0000-0002-5808-1611}{Felipe Duplat}}
+  \linkedin{\href{https://www.linkedin.com/in/felipeduplat/}{felipeduplat}}
+}
+
+%% Cabeçalho se estender durante toda a extensão da direita - 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-7.6cm}
+\makecvheader
+\end{adjustwidth}
+
+
+
+%% EXPERIÊNCIA
+\cvsection[coluna]{Experience}
+
+\cvevent{\small Intern}{Industries Federation of Bahia (FIEB)}{oct 20 -- mar 22}{Salvador/BA}
+\begin{itemize}
+\item Elaboration of technical reports on Civil Construction in Bahia and presentation of the situation;
+\item Caged and RAIS data processing;
+\item Elaboration of \textit{dashboards} and interactive panels.
+\end{itemize}
+
+\divider
+
+\cvevent{\small Intern}{Regional Development and Action Company (CAR)}{mar 19 -- aug 19}{Salvador/BA}
+\begin{itemize}
+\item Analysis and monitoring of socio-productive inclusion projects;
+\item Database creation and maintenance;
+\item Elaboration of technical reports and presentation of partial results.
+\end{itemize}
+
+\divider
+
+\cvevent{\small Intern}{Superintendence of Economic and Social Studies of Bahia (SEI)}{july 16-- jan 17}{Salvador/BA}
+\begin{itemize}
+	\item Elaboration of monthly reports on unemployment in the city of Salvador and metropolitan region;
+	\item Elaboration of special reports on certain groups (youth, elderly, women and blacks);
+	\item Efficiency analysis of researchers.
+\end{itemize}
+
+
+
+%% EDUCAÇÃO
+\cvsection{Education}
+
+\cvevent{\small M.A \ in Economic Development}{Federal University of Paraná (UFPR)}{mar 22 -- ongoing}{Curitiba/PR}
+
+\divider
+
+\cvevent{\small B.A \ in Economic Sciences}{Federal University of Bahia (UFBA)}{june 16 -- dec 21}{Salvador/BA}
+
+\divider
+
+\cvevent{\small Academic Exchange in Economics}{University of Santiago de Compostela (USC)}{aug 19 -- june 20}{Santiago de Compostela/ESP}
+
+
+
+%% PUBLICAÇÔES
+\cvsection{Publications}
+
+\textbf{Work presentation} - Analysis of Income Inequality between Whites and Blacks in the State of Bahia, VIII Week of Socioeconomic Studies 2018 - State Univesity of Feira de Santana (UEFS)
+
+
+
+%% ATIVIDADES EXTRACURRICULARES
+\clearpage
+\cvsection{Extracurricular activities}
+
+\cvachievement{\faUniversity}{Athletics of the Economics Course at UFBA}{Vice-president (2019-2020)}
+
+\divider
+
+\cvachievement{\faUniversity}{Plinio Moura Academic Directory}{Political Director (2016) and General Director (2017-2019)}
+
+\divider
+
+\cvachievement{\faBook}{Central Library of the State of Bahia}{Reader for the blind (2014-2016)}
+
+\end{document}
+
+

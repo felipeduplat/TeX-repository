@@ -16,7 +16,7 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 
 ### Lista
 
-Feito para realização de atividades mais simples da Universidade, como listas de exercício, ensaios, etc.
+Feito para realização de atividades mais simples da Universidade, como: listas de exercício, ensaios, etc.
 
 ### Slide
 

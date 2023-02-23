@@ -2,7 +2,7 @@
 
 # TeX-Repository
 
-**Um repositório contendo todos os meus templates feitos no LaTeX.**
+**Um repositório contendo _todos_ os meus templates feitos no LaTeX.**
 
 ## Descrição
 
@@ -25,3 +25,7 @@ Texto.
 ### TCC
 
 Texto.
+
+## Contribuições
+
+Dúvidas, sugestões e críticas podem ser direcionadas ao meu e-mail (duplat.f@gmail.com).

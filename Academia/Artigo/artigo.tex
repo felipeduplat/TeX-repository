@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% UNIVERSIDADE FEDERAL DO PARANÁ (UFPR)
+% PÓS-GRADUAÇÃO EM DESENVOLVIMENTO ECONÔMICO (PPGDE)
+% FACULDADE DE ECONOMIA
+% DISCENTE: FELIPE DUPLAT LUZ
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% ARTIGO - PPGDE UFPR %%%%%%
+
+% Classe:
+\documentclass[a4paper, 11pt]{article}
+
+
+% Pacotes utilizados:
+\usepackage[brazil]{babel}         % manter em PT-BR.
+\usepackage[sc]{titlesec}          % permitir versalete na seção.
+\usepackage{hyperref}              % criar hyperlink.
+\usepackage{tikz}                  % fazer o cabeçalho.
+\usepackage{fancyhdr}              % fazer o rodapé.
+\usepackage{titlesec}              % automatizar as seções.
+\usepackage{lipsum}                % gerar lero-lero.
+\usepackage{multicol}              % Gerar duas colunas.
+\usepackage{indentfirst}           % Identar tudo.
+\usepackage[auth-sc,               % autores em versalete;
+			affil-sl               % afiliação inclinada;
+			]{authblk}             % arrumar autores.
+\usepackage[style = abnt-numeric,  % manter formato ABNT;
+		    giveninits,            % manter primeiros nomes abreviados;
+		    scbib                  % manter em versalete;
+		   ]{biblatex}             % adicionar referências.
+
+% Margens:
+\usepackage[bindingoffset=0.2in,
+left=1in,
+right=1in,
+top=1in,
+bottom=1in,
+footskip=.25in]{geometry}
+\setlength{\textwidth}{18cm} 
+\setlength{\oddsidemargin}{-0.7cm}
+
+% hyperlink:
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=blue,
+	pdftitle={Lista}
+}
+
+% Alterar título do resumo:
+\addto\captionsbrazil{
+	\renewcommand{\abstractname}{\normalfont\scshape{\normalsize Resumo}}}
+
+% Referências:
+\addbibresource{referencias.bib}
+
+% 
+\makeatletter
+\renewcommand*{\@fnsymbol}[1]{\ensuremath{\ifcase#1\or \phi\or \dagger\or \ddagger\or
+		\mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
+		\or \ddagger\ddagger \else\@ctrerr\fi}}
+\makeatother
+
+% Cabeçalho:
+\title{\textsc{Título do artigo}}
+\author[$\Psi$]{Felipe Duplat\thanks{E-mail: \href{mailto:duplat.f@gmail.com}{duplat.f@gmail.com}}}
+\affil[$\Psi$]{\footnotesize Universidade Federal do Paraná, Brasil}
+\date{\today}
+
+% Identação:
+
+
+% Inserir todas as referências:
+\nocite{sotomayor21, dolevchenko09}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% TEXTO COMEÇA A PARTIR DAQUI:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+% Seção 00: resumo
+\begin{tikzpicture}
+	\draw[thick] (-6.5,0)--(10,0);
+\end{tikzpicture}
+
+\begin{abstract}
+	\lipsum[1]
+\end{abstract}
+
+\begin{tikzpicture}
+	\draw[thick] (-6.5,0)--(10,0);
+\end{tikzpicture}
+
+\vspace{0.5cm}
+
+
+
+% Seção 02: introdução
+\begin{multicols}{2}
+
+\section{\textsc{Introdução}}
+
+\lipsum[1-5]
+
+
+
+% Seção 03: revisão de literatura
+\section{Revisão de literatura}
+
+\lipsum[1-7]
+
+
+
+% Seção 04: metodologia e dados
+\section{Metodologia e dados}
+
+\lipsum[1-4]
+
+
+
+% Seção 05: resultados
+\section{Resultados}
+
+\lipsum[1-5]
+
+
+
+% Seção 06: considerações finais
+\section{Considerações finais}
+
+\lipsum[1-6]
+
+
+
+% Referências:
+\printbibliography[title={Referências}]
+
+\end{multicols}
+\end{document}
+
+

@@ -22,9 +22,9 @@ Um repositório com o objetivo de compartilhar os _templates_ que elaborei no La
 <!-- Academia -->
 ### :mortar_board: Academia
 
-<!-- #### Artigo: -->
+#### Artigo:
 
-<!-- [em progresso]. -->
+Template genérico, em duas colunas, para elaborar artigos acadêmicos.
 
 #### Lista:
 
@@ -66,7 +66,6 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 <!-- Bloco 02 - calendário -->
 ## :calendar: Futuras implementações
 
-- [ ] :mortar_board: artigo
 - [ ] :briefcase:    slide institucional
 - [ ] :briefcase:    carta de apresentação
 - [ ] :mortar_board: pôster

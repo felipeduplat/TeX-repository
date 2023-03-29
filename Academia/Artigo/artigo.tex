@@ -23,6 +23,7 @@
 \usepackage{lipsum}                % gerar lero-lero.
 \usepackage{multicol}              % Gerar duas colunas.
 \usepackage{indentfirst}           % Identar tudo.
+\usepackage{lettrine}              % Primeira palavra frufrusada.
 \usepackage[auth-sc,               % autores em versalete;
 			affil-sl               % afiliação inclinada;
 			]{authblk}             % arrumar autores.
@@ -57,7 +58,10 @@ footskip=.25in]{geometry}
 % Referências:
 \addbibresource{referencias.bib}
 
-% 
+% Traduzir para pt-br:
+\renewcommand*{\Authands}{ e }
+
+% Substituir símbolo do \thanks:
 \makeatletter
 \renewcommand*{\@fnsymbol}[1]{\ensuremath{\ifcase#1\or \phi\or \dagger\or \ddagger\or
 		\mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
@@ -67,6 +71,8 @@ footskip=.25in]{geometry}
 % Cabeçalho:
 \title{\textsc{Título do artigo}}
 \author[$\Psi$]{Felipe Duplat\thanks{E-mail: \href{mailto:duplat.f@gmail.com}{duplat.f@gmail.com}}}
+\author[$\Psi$]{Vinícius Vale}
+\author[$\Psi$]{Kênia Souza}
 \affil[$\Psi$]{\footnotesize Universidade Federal do Paraná, Brasil}
 \date{\today}
 
@@ -95,7 +101,9 @@ footskip=.25in]{geometry}
 \end{tikzpicture}
 
 \begin{abstract}
-	\lipsum[1]
+	\lipsum[1] \\
+	\textbf{Palavras-chave}: [texto] \\
+	\textbf{Classificação JEL}: [texto]
 \end{abstract}
 
 \begin{tikzpicture}
@@ -111,7 +119,7 @@ footskip=.25in]{geometry}
 
 \section{\textsc{Introdução}}
 
-\lipsum[1-5]
+\lettrine[lines=3,loversize=.6,lraise=.1,nindent=.5em]{\fboxsep3pt\fboxrule2pt\fcolorbox{black}{white}{\color{black}L}}{} orem ipsum dolor sit amet, consectetuer adipiscing elit. \lipsum[1-4]
 
 
 

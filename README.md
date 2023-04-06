@@ -81,10 +81,11 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 
 - :mortar_board: TCC
 
-Por alguma razão, a compilação gera o PDF e apresenta alguns erros na parte textual e pós-textual. Acredito que seja por conta da nova atualização do MikTeX. Soluções temporárias:
+Por alguma razão, a compilação gera o PDF e apresenta alguns erros na parte textual e pós-textual. Acredito que seja por conta da atualização do MikTeX. Soluções temporárias:
 
-- [ ] ignorar :smiling_face_with_tear:; ou
-- [ ] compilar no [Overleaf](https://overleaf.com/).
+<kbd> → </kbd> ignorar :smiling_face_with_tear:; ou
+
+<kbd> → </kbd> compilar no [Overleaf](https://overleaf.com/).
 
 
 

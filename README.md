@@ -14,6 +14,8 @@
 
 Um repositório com o objetivo de compartilhar os _templates_ que elaborei no LaTeX para as atividades do PPGDE-UFPR e também para processos seletivos - seja dentro ou fora da Academia.
 
+Uso o MikTeX e TeXstudio para criar e/ou editar os arquivos .tex que posto neste repositório.
+
 
 
 <!-- Bloco 01 - conteúdo -->

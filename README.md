@@ -77,7 +77,7 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 
 
 <!-- Bloco 03 - problemas conhecidos -->
-## :mailbox_with_mail: _Known issues_ 
+## :bug: _Known issues_ 
 
 
 

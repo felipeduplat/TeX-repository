@@ -36,7 +36,7 @@ Feito para realização de atividades mais simples da Universidade, como: listas
 
 #### Projeto de dissertação:
 
-Template da UFPR para elaboração de projetos de dissertação (e tese).
+Adaptei o modelo em .docx da UFPR para o LaTeX com mínimas alterações estéticas. Serve para elaborar os projetos de dissertação (e tese).
 
 #### Slide:
 

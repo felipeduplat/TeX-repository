@@ -76,7 +76,14 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 
 
 
-<!-- Bloco 03 - contribuições -->
+<!-- Bloco 03 - problemas conhecidos -->
+## :mailbox_with_mail: _Known issues_ 
+
+
+
+
+
+<!-- Bloco 04 - contribuições -->
 ## :mailbox_with_mail: Contribuições 
 
 Dúvidas, sugestões e críticas podem ser direcionadas ao meu e-mail (duplat.f@gmail.com).

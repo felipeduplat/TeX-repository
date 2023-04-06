@@ -44,7 +44,7 @@ Feito para apresentação de artigos e trabalhos acadêmicos.
 
 #### TCC:
 
-Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc-modelo-para-teses-e-dissertacoes-em-latex/), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado da UFPR. Para escolher entre um dos três, basta alterar a linha do _script_.
+Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc-modelo-para-teses-e-dissertacoes-em-latex/), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado da Faculdade de Ciências Econômicas da UFPR. Para escolher entre um dos três, basta alterar a linha do _script_.
 
 
 ---

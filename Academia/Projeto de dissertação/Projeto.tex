@@ -1,0 +1,250 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% UNIVERSIDADE FEDERAL DO PARANÁ (UFPR)
+% PÓS-GRADUAÇÃO EM DESENVOLVIMENTO ECONÔMICO (PPGDE)
+% FACULDADE DE ECONOMIA
+% DISCENTE: FELIPE DUPLAT LUZ
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% TRABALHO ACADÊMICO - PPGDE UFPR %%%%%%
+
+% Classe:
+\documentclass[a4paper, 11pt]{article}
+
+% Pacotes utilizados:
+\usepackage[brazil]{babel}             % manter em PT-BR.
+\usepackage[sc]{titlesec}              % permitir versalete na seção.
+\usepackage{tikz}                      % fazer o cabeçalho.
+\usepackage{fancyhdr}                  % fazer o rodapé.
+\usepackage{titlesec}                  % automatizar as seções.
+\usepackage{lscape}                    % modo paisagem.
+\usepackage{multirow}                  % para tabelas.
+\usepackage{graphics}                  % 
+\usepackage{lipsum}                    % gerar ler-lero.
+\usepackage[style = abnt-numeric,      % manter formato ABNT.
+			giveninits,                % manter primeiros nomes abreviados.
+			scbib                      % manter em versalete.
+		   ]{biblatex}                 % adicionar referências.
+
+% Margens:
+\usepackage[bindingoffset=0.2in,
+left=1in,
+right=1in,
+top=1in,
+bottom=1in,
+footskip=.25in]{geometry}
+\setlength{\textwidth}{18cm} 
+\setlength{\oddsidemargin}{-0.7cm}
+
+% Edição das seções:
+\titleformat{\section}[block]{\LARGE\scshape\filcenter}{}{0em}{}
+\titleformat{\subsection}[hang]{\Large\scshape}{}{1em}{}
+
+% Referências:
+\addbibresource{Referências.bib}
+
+% Cabeçalho:
+\setlength\parindent{0pt}
+\begin{document}
+
+	\colorbox{white!10!}{
+		\begin{minipage}[l]{0.169 \textwidth}
+			\begin{flushleft}
+				\includegraphics[width=1.1in,height=0.85in]{./Imagens/logo_UFPR.png}
+			\end{flushleft}
+		\end{minipage}
+		\begin{minipage}[l]{0.75 \textwidth}
+			\begin{flushleft}
+				{\large \textsc{Ministério da Educação}}
+				\\
+				{\large \textsc{Universidade Federal do Paraná}}
+				\\
+				\large \textsc{Setor de Ciências Sociais Aplicadas}
+				\\
+				\large \textsc{Programa de Pós-Graduação em Desenvolvimento Econômico}
+			\end{flushleft}
+		\end{minipage}
+	}
+
+% Rodapé:
+\thispagestyle{empty}
+
+% Capa:
+\begin{center}
+	\vspace{2cm}
+	\textbf{[NOME DO ALUNO]} \\
+	\vspace{5cm}
+	\textbf{[TÍTULO DA DISSERTAÇÃO]} \\
+\end{center}
+\begin{flushright}
+	\vspace{5cm}
+	\textbf{[NOME DO(A) ORIENTADOR(A)]} \\
+	\textbf{[NOME DO(A) CO-ORIENTADOR(A)]} \\
+\end{flushright}
+\begin{center}
+	\vspace{5cm}
+	\textbf{[CIDADE]} \\
+	\textbf{[ANO]}
+\end{center}
+
+% Inserir todas as referências:
+\nocite{sotomayor21, dolevchenko09}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% TEXTO COMEÇA A PARTIR DAQUI:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% PRÉ-TEXTUAL:
+\clearpage
+\pagenumbering{arabic}
+
+% Resumo:
+\newpage
+\section*{Resumo}
+
+\lipsum[1] \\
+
+\textbf{Palavras-chave:} texto. texto. texto.
+
+
+
+% Abstract:
+\vspace{3cm}
+\section*{Abstract}
+
+\lipsum[1] \\
+
+\textbf{Keywords:} text. text. text.
+
+
+
+%%% TEXTUAL:
+
+% Capítulo 01 - Introdução:
+\newpage
+\section{Introdução}
+
+\lipsum[1-12]
+
+
+
+% Capítulo 02 - Problema e justificativa:
+\newpage
+\section{Problema e Justificativa}
+
+\lipsum[1-8]
+
+
+
+% Capítulo 03 - Objetivos:
+\newpage
+\section{Objetivos}
+
+\vspace{1cm}
+\subsection{Objetivo Geral}
+
+\lipsum[1-5]
+
+\vspace{1cm}
+\subsection{Objetivos Específicos}
+
+\lipsum[1-2].
+
+
+
+% Capítulo 04 - Revisão bibliográfica:
+\newpage
+\section{Revisão Bibliográfica}
+
+\lipsum[1-15]
+
+
+
+% Capítulo 05 - Metodologia:
+\newpage
+\section{Metodologia}
+
+\lipsum[1-10]
+
+
+
+% Capítulo 06 - Resultados esperados:
+\newpage
+\section{Resultados Esperados}
+
+\lipsum[1-7]
+
+
+
+% Capítulo 07 - Cronograma:
+\newpage
+\begin{landscape}
+	\section{Cronograma}
+	
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{
+		\begin{tabular}{|l|cccccccccccc|}
+			\hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{Atividades}} & \multicolumn{12}{c|}{meses}                                                                                                                                                                                                                                                             \\ \cline{2-13} 
+			\multicolumn{1}{|c|}{}                            & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{9} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{11} & 12 \\ \hline
+			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+		\end{tabular}
+	}
+	\end{table}
+
+\end{landscape}
+
+
+
+% Referências:
+\newpage
+\printbibliography[title={Referências Bibliográficas}]
+
+
+
+% Assinaturas:
+\newpage
+\section{Assinaturas}
+
+\vspace{3cm}
+\centering
+\rule{6cm}{0.4pt} \\
+Assinatura do aluno(a) \\
+nome do(a) aluno(a)
+
+\vspace{3cm}
+Declaro que sou orientador(a) deste trabalho e aprovo este projeto de dissertação.
+
+\vspace{3cm}
+\centering
+\rule{6cm}{0.4pt} \\
+Assinatura do(a) orientador(a) \\
+nome do(a) orientador(a)
+
+\vspace{3cm}
+\centering
+\rule{6cm}{0.4pt} \\
+Assinatura do(a) co-orientador(a) \\
+nome do(a) co-orientador(a)
+
+
+\end{document}
+
+

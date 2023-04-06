@@ -34,6 +34,10 @@ Feito para realização de atividades mais simples da Universidade, como: listas
 
 <!-- [em progresso]. -->
 
+#### Projeto de dissertação:
+
+Template da UFPR para elaboração de projetos de dissertação (e tese).
+
 #### Slide:
 
 Feito para apresentação de artigos e trabalhos acadêmicos.

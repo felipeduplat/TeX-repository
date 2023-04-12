@@ -83,7 +83,7 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 
 - :mortar_board: TCC
 
-Por alguma razão, a compilação gera o PDF e apresenta alguns erros na parte textual e pós-textual. Acredito que seja por conta da atualização do MikTeX. Soluções temporárias:
+Por alguma razão, a compilação apresenta alguns erros na parte textual e pós-textual, apesar de ainda conseguir gerar o arquivo PDF. Acredito que seja por conta da última atualização do MikTeX que causou algum problema de compatibilidade. Há duas soluções temporárias:
 
 <kbd> → </kbd> ignorar :smiling_face_with_tear:; ou
 

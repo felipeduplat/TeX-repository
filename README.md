@@ -28,9 +28,9 @@ Uso o MikTeX e TeXstudio para criar e/ou editar os arquivos .tex que posto neste
 
 Template genérico, em duas colunas, para elaborar artigos acadêmicos.
 
-#### Lista:
+#### Lista de exercício:
 
-Feito para realização de atividades mais simples da Universidade, como: listas de exercício, ensaios, etc.
+Feito para realização de listas de exercício da Universidade.
 
 <!-- #### Pôster: -->
 
@@ -39,6 +39,10 @@ Feito para realização de atividades mais simples da Universidade, como: listas
 #### Projeto de dissertação:
 
 Adaptei o modelo em .docx do PPGDE-UFPR para o LaTeX com mínimas alterações estéticas. Serve para elaborar os projetos de dissertação (e tese).
+
+#### Resumo:
+
+Feito para realização de atividades mais simples da Universidade, como: resumos, ensaios, etc.
 
 #### Slide:
 

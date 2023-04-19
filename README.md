@@ -1,6 +1,7 @@
 
-<!-- Imagem -->
-![latex](https://github.com/felipeduplat/private/blob/7590f0cb1c87be0f053830d160bc0d09d4ee5888/001.png)
+<p align="center">
+  <img width="250" height="150" src="https://github.com/felipeduplat/private/blob/7590f0cb1c87be0f053830d160bc0d09d4ee5888/001.png">
+</p>
 
 
 <!-- Título -->

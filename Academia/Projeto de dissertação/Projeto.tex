@@ -19,9 +19,9 @@
 \usepackage{tikz}                      % fazer o cabeçalho.
 \usepackage{fancyhdr}                  % fazer o rodapé.
 \usepackage{titlesec}                  % automatizar as seções.
-\usepackage{lscape}                    % modo paisagem.
+\usepackage{makecell}                  % quebrar célula.
+\usepackage{pdflscape}                 % modo paisagem.
 \usepackage{multirow}                  % para tabelas.
-\usepackage{graphics}                  % 
 \usepackage{lipsum}                    % gerar ler-lero.
 \usepackage[style = abnt-numeric,      % manter formato ABNT.
 			giveninits,                % manter primeiros nomes abreviados.
@@ -133,7 +133,7 @@ footskip=.25in]{geometry}
 \newpage
 \section{Introdução}
 
-\lipsum[1-12]
+\lipsum[1-2]
 
 
 
@@ -141,7 +141,7 @@ footskip=.25in]{geometry}
 \newpage
 \section{Problema e Justificativa}
 
-\lipsum[1-8]
+\lipsum[1-2]
 
 
 
@@ -152,7 +152,7 @@ footskip=.25in]{geometry}
 \vspace{1cm}
 \subsection{Objetivo Geral}
 
-\lipsum[1-5]
+\lipsum[1-2]
 
 \vspace{1cm}
 \subsection{Objetivos Específicos}
@@ -165,7 +165,7 @@ footskip=.25in]{geometry}
 \newpage
 \section{Revisão Bibliográfica}
 
-\lipsum[1-15]
+\lipsum[1-2]
 
 
 
@@ -173,7 +173,7 @@ footskip=.25in]{geometry}
 \newpage
 \section{Metodologia}
 
-\lipsum[1-10]
+\lipsum[1-2]
 
 
 
@@ -181,7 +181,7 @@ footskip=.25in]{geometry}
 \newpage
 \section{Resultados Esperados}
 
-\lipsum[1-7]
+\lipsum[1-2]
 
 
 
@@ -189,26 +189,24 @@ footskip=.25in]{geometry}
 \newpage
 \begin{landscape}
 	\section{Cronograma}
-	
-	\begin{table}[h]
-		\centering
-		\resizebox{\textwidth}{!}{
-		\begin{tabular}{|l|cccccccccccc|}
+	\centering
+		\begin{tabular}{ | p{6em} | p{5em}| p{5em} | p{5em} | p{5em} | p{5em} | p{5em} | p{5em} | p{5em} | p{5em} |} 
 			\hline
-			\multicolumn{1}{|c|}{\multirow{2}{*}{Atividades}} & \multicolumn{12}{c|}{meses}                                                                                                                                                                                                                                                             \\ \cline{2-13} 
-			\multicolumn{1}{|c|}{}                            & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{9} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{11} & 12 \\ \hline
-			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
-			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
-			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
-			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
-			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
-			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
-			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
-			& \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}   & \multicolumn{1}{c|}{}   &    \\ \hline
+			Atividade/Mês& Fevereiro & Março & Abril & Maio & Junho & Julho & Agosto & Setembro & Outubro\\ 
+			\hline\hline
+			\makecell[l]{Elaboração do\\ projeto} &  &  &  &  &  &  &  &  &  \\
+			\hline
+			\makecell[l]{Revisão \\ sistemática} &  &  &  &  &  &  &  &  &  \\
+			\hline
+			Revisão sistemática &  &  &  & & & & & & \\
+			\hline
+			Revisão sistemática &  &  &  & & & & & & \\
+			\hline
+			Revisão sistemática &  &  &  & & & & & & \\
+			\hline
+			Revisão sistemática &  &  &  & & & & & & \\
+			\hline
 		\end{tabular}
-	}
-	\end{table}
-
 \end{landscape}
 
 

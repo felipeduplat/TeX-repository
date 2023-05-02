@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="300" height="250" src="https://github.com/felipeduplat/private/blob/main/001_1.png">
+  <img width="300" height="250" src="https://github.com/felipeduplat/private/blob/main/001.png">
 </p>
 
 

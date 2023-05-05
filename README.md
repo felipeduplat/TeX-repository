@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="300" height="250" src="https://github.com/felipeduplat/private/blob/main/001_1.png">
+  <img width="300" height="250" src="https://github.com/felipeduplat/private/blob/main/001.png">
 </p>
 
 
@@ -30,7 +30,7 @@ Uso o MikTeX e TeXstudio para criar e editar os arquivos .tex que posto neste re
 Template genérico, em duas colunas, para elaborar artigos acadêmicos.
 
 <p align="center">
-  <img width="300" height="350" src="https://github.com/felipeduplat/private/blob/main/003.png">
+  <img width="300" height="400" src="https://github.com/felipeduplat/private/blob/main/003.png">
 </p>
 
 #### Lista de exercício:
@@ -38,7 +38,7 @@ Template genérico, em duas colunas, para elaborar artigos acadêmicos.
 Feito para realização de listas de exercício da Universidade.
 
 <p align="center">
-  <img width="300" height="350" src="https://github.com/felipeduplat/private/blob/main/004.png">
+  <img width="300" height="400" src="https://github.com/felipeduplat/private/blob/main/004.png">
 </p>
 
 <!-- #### Pôster: -->
@@ -50,7 +50,7 @@ Feito para realização de listas de exercício da Universidade.
 Adaptei o modelo em .docx do PPGDE-UFPR para o LaTeX com mínimas alterações estéticas. Serve para elaborar os projetos de dissertação (e tese).
 
 <p align="center">
-  <img width="300" height="350" src="https://github.com/felipeduplat/private/blob/main/005.png">
+  <img width="300" height="400" src="https://github.com/felipeduplat/private/blob/main/005.png">
 </p>
 
 #### Resumo:
@@ -58,7 +58,7 @@ Adaptei o modelo em .docx do PPGDE-UFPR para o LaTeX com mínimas alterações e
 Feito para realização de atividades mais simples da Universidade, como: resumos, ensaios, etc.
 
 <p align="center">
-  <img width="300" height="350" src="https://github.com/felipeduplat/private/blob/main/006.png">
+  <img width="300" height="400" src="https://github.com/felipeduplat/private/blob/main/006.png">
 </p>
 
 #### Slide acadêmico:
@@ -74,7 +74,7 @@ Feito para apresentação de artigos e trabalhos acadêmicos.
 Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc-modelo-para-teses-e-dissertacoes-em-latex/), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado da Faculdade de Ciências Econômicas da UFPR. Para escolher entre um dos três, basta alterar a linha do _script_.
 
 <p align="center">
-  <img width="300" height="350" src="https://github.com/felipeduplat/private/blob/main/009.png">
+  <img width="300" height="400" src="https://github.com/felipeduplat/private/blob/main/009.png">
 </p>
 
 ---

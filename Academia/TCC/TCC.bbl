@@ -1,0 +1,126 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{anderson20}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6d116d9dc680a2fa66a8490eeb3d25fc}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6d116d9dc680a2fa66a8490eeb3d25fc}
+      \strng{fullhash}{6d116d9dc680a2fa66a8490eeb3d25fc}
+      \strng{bibnamehash}{6d116d9dc680a2fa66a8490eeb3d25fc}
+      \strng{authorbibnamehash}{6d116d9dc680a2fa66a8490eeb3d25fc}
+      \strng{authornamehash}{6d116d9dc680a2fa66a8490eeb3d25fc}
+      \strng{authorfullhash}{6d116d9dc680a2fa66a8490eeb3d25fc}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Policy Modeling}
+      \field{number}{6}
+      \field{title}{The impact of trade liberalisation on poverty and inequality: Evidence from CGE models}
+      \field{volume}{42}
+      \field{year}{2020}
+      \field{pages}{1208\bibrangedash 1227}
+      \range{pages}{20}
+    \endentry
+    \entry{campostimini22}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3a9ae2c3eef6e3ce55e01d7661f45bc4}{%
+           family={Campos},
+           familyi={C\bibinitperiod},
+           given={Rodolfo\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=334034f6825924f4a5a3aa8ecdac20ce}{%
+           family={Timini},
+           familyi={T\bibinitperiod},
+           given={Jacopo},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{73e85adb0c277637afa82b4306fe6aad}
+      \strng{fullhash}{73e85adb0c277637afa82b4306fe6aad}
+      \strng{bibnamehash}{73e85adb0c277637afa82b4306fe6aad}
+      \strng{authorbibnamehash}{73e85adb0c277637afa82b4306fe6aad}
+      \strng{authornamehash}{73e85adb0c277637afa82b4306fe6aad}
+      \strng{authorfullhash}{73e85adb0c277637afa82b4306fe6aad}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Economics}
+      \field{title}{Unequal trade, unequal gains: the heterogeneous impact of MERCOSUR}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+    \endentry
+    \entry{do09}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3aae26601c2b8e609d3fd92cd9c38c25}{%
+           family={Do},
+           familyi={D\bibinitperiod},
+           given={Quy-Toan},
+           giveni={Q\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=b996d7ddf8a5f64af26fd46ae798c904}{%
+           family={Levchenko},
+           familyi={L\bibinitperiod},
+           given={Andrei\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c006dd3ec4c0aafa9954883871aab71a}
+      \strng{fullhash}{c006dd3ec4c0aafa9954883871aab71a}
+      \strng{bibnamehash}{c006dd3ec4c0aafa9954883871aab71a}
+      \strng{authorbibnamehash}{c006dd3ec4c0aafa9954883871aab71a}
+      \strng{authornamehash}{c006dd3ec4c0aafa9954883871aab71a}
+      \strng{authorfullhash}{c006dd3ec4c0aafa9954883871aab71a}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economic theory}
+      \field{number}{4}
+      \field{title}{Trade, inequality, and the political economy of institutions}
+      \field{volume}{144}
+      \field{year}{2009}
+      \field{pages}{1489\bibrangedash 1520}
+      \range{pages}{32}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -19,80 +19,28 @@
 
 % Classe:
 \documentclass[
-12pt,	        	% tamanho da fonte.
-openright,	        % capítulos começam em pág ímpar (insere página vazia caso preciso).
-%twoside,           % para impressão em anverso (frente) e verso.
-oneside,            % para impressão em páginas separadas (somente anverso).
-a4paper,			% tamanho do papel.
-chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas.
-english,			% idioma adicional para hifenização.
-french,				% idioma adicional para hifenização.
-spanish,			% idioma adicional para hifenização.
-brazil				% o último idioma é o principal do documento.
-]{Classe/Classe_1}  % Classe_2 altera o cabeçalho.
+12pt,            % tamanho da fonte.
+openright,	     % capítulos começam em pág ímpar (insere página vazia caso preciso).
+oneside,         % para impressão em páginas separadas (somente anverso).
+%twoside,        % para impressão em anverso (frente) e verso.
+a4paper,         % tipo do papel.
+chapter=TITLE,   % títulos de capítulos convertidos em letras maiúsculas.
+section=TITLE,   % títulos de seções convertidos em letras maiúsculas.
+subsection=Title % títulos de subseções convertidos em letras maiúsculas.
+english,         % ENG para hifenização.
+spanish,         % ESP para hifenização.
+brazil,          % PT-BR para hifenização - o último idioma é o principal do documento
+dvipsnames       % cores adicionais.
+]{abntex2}
 
+% Estilo do documento:
+\usepackage{Arquivos/UFPR}
 
-% Pacotes utilizados:
-\usepackage[T1]{fontenc}		  % seleção de códigos de fonte.
-\usepackage[utf8]{inputenc}		  % codificação do documento (conversão automática dos acentos).
-%\usepackage{lmodern}			  % usa a fonte Latin Modern.
-\usepackage{times}		    	  % usa a fonte Times New Roman % para usar a fonte, lembre-se de tirar o % do comando %"\renewcommand{\ABNTEXchapterfont}{\rmfamily}".	
-\usepackage{lastpage}			  % usado pela Ficha catalográfica.
-\usepackage{indentfirst}		  % identa o primeiro parágrafo de cada seção.
-\usepackage{color}				  % controle das cores.
-\usepackage{graphicx}			  % inclusão de gráficos.
-\usepackage{float} 				  % fixa tabelas e figuras no local exato.
-\usepackage{chemfig}              % para escrever reações químicas.
-\usepackage{chemmacros}           % para escrever reações químicas.
-\usepackage{tikz}				  % para escrever reações químicas e outros.
-\usetikzlibrary{positioning}      % posicionar imagens e tabelas.
-\usepackage{microtype}            % para melhorias de justificação.
-\usepackage{pdfpages}             % facilita alguma porra do pdf.
-\usepackage{makeidx}              % para gerar índice remissivo.
-\usepackage{hyphenat}             % retirar a hifenizacao do texto.
-\usepackage[absolute]{textpos}    % permite o posicionamento do texto.
-\usepackage{eso-pic}              % incluir imagem de fundo.
-\usepackage{makebox}              % criar caixa de texto.
-\usepackage{multicol}             % suporte a mesclagens em colunas.
-\usepackage{multirow}	          % suporte a mesclagens em linhas.
-\usepackage{longtable}	          % tabelas com várias páginas.
-\usepackage{threeparttablex}      % notas no longtable.
-\usepackage{array}                % formato de colunas.
-%\usepackage[superscript]{cite}   % agrupar a citação numérica consecutiva.
+% Pacotes e formatação:
+\input{Arquivos/Formatação}
 
-
-% Sistema autor-data: (escolha apenas um!)
-\usepackage[alf, abnt-emphasize=bf, abnt-thesis-year=both, abnt-repeated-author-omit=no, abnt-last-names=abnt, abnt-etal-cite, abnt-etal-list=3, abnt-etal-text=it, abnt-and-type=e, abnt-doi=doi, abnt-url-package=none, abnt-verbatim-entry=no]{abntex2cite}
-\bibliographystyle{Classe/autordata}
-%\bibliographystyle{Classe/autordata_ing} % para em inglês.
-
-
-% Sistema autor-data com todos os autores:
-%\usepackage[alf, abnt-emphasize=bf, abnt-thesis-year=both, abnt-repeated-author-omit=no, abnt-last-names=abnt, abnt-etal-cite, abnt-etal-list=0, abnt-etal-text=it, abnt-and-type=e, abnt-doi=doi, abnt-url-package=none, abnt-verbatim-entry=no]{abntex2cite} 
-%\bibliographystyle{Classe/autordata}
-%\bibliographystyle{Classe/autordata_ing} % para em inglês.
-
-
-% Sistema numérico:
-%\usepackage{cite}   % agrupa citações numéricas consecutivas.
-%\usepackage[num, abnt-emphasize=bf, abnt-thesis-year=both, abnt-repeated-author-omit=no, abnt-last-names=abnt, abnt-etal-cite, abnt-etal-list=3, abnt-etal-text=it, abnt-and-type=e, abnt-doi=doi, abnt-url-package=none, abnt-verbatim-entry=no]{abntex2cite} 
-%\bibliographystyle{Classe/citnum}
-%\bibliographystyle{Classe/citnum_ing}
-
-
-% No sistema numérico, habilite um dos comandos abaixo:
-%\renewcommand{\thefootnote}{\fnsymbol{footnote}}  % inserção de símbolos em nota de rodapé.
-%\renewcommand{\thefootnote}{\alph{footnote}}      % inserção de letras minúscula em nota de rodapé.
-%\renewcommand{\thefootnote}{\Alph{footnote}}      % inserção de letras maiúscula em nota de rodapé.
-%\renewcommand{\thefootnote}{\roman{footnote}}     % inserção de números romanos minúsculos  em nota de rodapé.
-%\renewcommand{\thefootnote}{\Roman{footnote}}     % inserção de números romanos minúsculos  em nota de rodapé.
-
-
-% Outros:
-\renewcommand{\footnotesize}{\small} % diminuir a fonte das notas de rodapé.
-\renewcommand{\ABNTEXchapterfont}{\rmfamily} % para utilizar a fonte Times New Roman.
-\usepackage{Classe/ABNT6023-2018} % compatibilização com a ABNT NBR 6023:2018.
-%\DeclareFieldFormat{url}{\bibstring{urlfrom}\addcolon\addspace\url{#1}} % tirar <> da URL.
+% Informações do documento:
+\input{Arquivos/Dados}
 
 
 
@@ -100,115 +48,46 @@ brazil				% o último idioma é o principal do documento.
 % DADOS INICIAIS
 % ----------------------------------------------------------
 
-% Escolher o tipo de TCC:
-%\curso{grad} % graduação;
-\curso{mest}  % se mestrado; ou
-%\curso{doc}  % se doutorado.
-
-
-% informações do PDF:
-\makeatletter
-\hypersetup{
-	%pagebackref=true,
-	pdftitle={\@title}, 
-	pdfauthor={\@author},
-	pdfsubject={\imprimirpreambulo},
-	pdfcreator={LaTeX with abnTeX2},
-	pdfkeywords={abnt}{latex}{abntex}{USPSC}{trabalho acadêmico},
-	colorlinks=true,      % false: boxed links; true: colored links.
-	%linkcolor=black,     % cor dos links: preto.
-	%citecolor=black,     % cor dos links: preto.
-	%filecolor=black,     % cor dos links: preto.
-	%urlcolor=black,      % cor dos links: preto.
-	linkcolor=blue,       % cor dos links: azul.
-	citecolor=blue,       % cor dos links: azul.
-	filecolor=magenta,    % cor dos links: azul.
-	urlcolor=blue,        % cor dos links: azul.
-	bookmarksdepth=4	  % 
-}
-\makeatother
- 
-
-%% Espaçamentos entre linhas e parágrafos:
-
-\setlength{\parindent}{1.3cm} % tamanho do parágrafo.
-\setlength{\parskip}{0.2cm}   % espaçamento entre um parágrafo e outro.
-\makeindex                    % compila o sumário e índice.
-\frenchspacing                % retira espaço extra obsoleto entre as frases.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-% TEXTO COMEÇA A PARTIR DAQUI:
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{document}
 
-% Idioma do documento:
-\selectlanguage{brazil}   % se português.
-%\selectlanguage{english} % se inglês.
+% Uppercase dos títulos:
+\renewcommand{\bibname}{{REFER\^ENCIAS}}
+\renewcommand{\tablename}{TABELA }
+\renewcommand{\figurename}{FIGURA }
+\renewcommand{\figureautorefname}{FIGURA}
+\renewcommand{\tableautorefname}{TABELA}
+\newcommand{\equationname}{EQUA\c{C}\~AO~}
+\renewcommand{\equationautorefname}{EQUA\c{C}\~AO~}
 
-
-% Formatação dos títulos:
-\renewcommand{\ABNTEXchapterfontsize}{\fontsize{12}{12}\bfseries}
-\renewcommand{\ABNTEXsectionfontsize}{\fontsize{12}{12}\bfseries}
-\renewcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{12}\normalfont}
-\renewcommand{\ABNTEXsubsubsectionfontsize}{\fontsize{12}{12}\normalfont}
-\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\fontsize{12}{12}\normalfont}
+% Fonte do número da primeira página do capítulo:
+\aliaspagestyle{chapter}{chapfirst}
 
 
 
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
 % ----------------------------------------------------------
+\pretextual
 
-\imprimircapa                           % capa.
-\imprimirfolhaderosto                   % inserir * se for twoside.
-
-%---%
-
-\include{Pré/Ficha_catalográfica}       % ficha catalográfica.
-\include{Pré/Folha_de_aprovação}        % folha de aprovação.
-\include{Pré/Dedicatória}               % dedicatória.
-\include{Pré/Agradecimentos}            % agradecimentos.
-\include{Pré/Epígrafe}                  % epígrafe.
-\include{Pré/Resumo}                    % resumo.
-\include{Pré/Abstract}                  % abstract (vem antes se trabalho for em inglês).
-
-%---%
-
-\pdfbookmark[0]{\listfigurename}{lof}   % lista de figuras.
-\listoffigures*                         % lista de figuras.
-\cleardoublepage                        % lista de figuras.
-\pdfbookmark[0]{\listtablename}{lot}    % lista de tabelas.
-\listoftables*                          % lista de tabelas.
-\cleardoublepage                        % lista de tabelas.
-\pdfbookmark[0]{\listofquadroname}{loq} % lista de quadros.
-\listofquadro*
-\cleardoublepage
-
-%---%
-
-\include{Pré/Abreviaturas}              % abreviaturas.
-\include{Pré/Símbolos}                  % símbolos.
-
-%---%
-
-\pdfbookmark[0]{\contentsname}{toc}     % sumário.
-\tableofcontents*                       % sumário.
-\cleardoublepage                        % sumário.
+\include{Pré/Capa}                            % Capa.
+\include{Pré/Folha_de_rosto}                  % Folha de rosto.
+\include{Pré/Ficha_catalográfica}             % Ficha catalográfica.
+\include{Pré/Errata}                          % Errata.
+\include{Pré/Termo_de_aprovação}              % Termo de aprovação.
+\include{Pré/Dedicatória}                     % Dedicatória.
+\include{Pré/Agradecimentos}                  % Agradecimentos.
+\include{Pré/Epígrafe}                        % Epígrafe.
+\include{Pré/Resumo}                          % Resumo.
+\include{Pré/Abstract}                        % Abstract.
+\include{Pré/Listas}                          % Listas de figuras, quadros, tabelas e sumário.
 
 
 
 % ----------------------------------------------------------
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
-
 \textual
+
 \include{Capítulos/1_Introdução}
 \include{Capítulos/2_Revisão_de_literatura}
 \include{Capítulos/3_Metodologia_e_dados}
@@ -220,11 +99,28 @@ brazil				% o último idioma é o principal do documento.
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
 % ----------------------------------------------------------
-
 \postextual
-\bibliography{Referências}
-\include{Pós/Apêndice}
-\include{Pós/Anexo}
+
+% Referências:
+\begingroup
+\printbibliography[heading=bibintoc,notkeyword= {consulta}, notkeyword={npub-informal}]
+\printbibliography [keyword= consulta, title = FONTES DE CONSULTA]
+\endgroup
+
+% Capítulos pós-textuais:
+\addtocontents{toc}{\vspace{4pt}}
+
+% Apêndice:
+\begin{apendicesenv}
+	\renewcommand{\thechapter}{\arabic{chapter}}
+	\input{Pós/Apêndice}
+\end{apendicesenv}
+
+% Anexo:
+\begin{anexosenv}
+	\renewcommand{\thechapter}{\arabic{chapter}}
+	\input{Pós/Anexo}
+\end{anexosenv}
 
 \end{document}
 

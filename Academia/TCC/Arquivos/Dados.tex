@@ -1,0 +1,48 @@
+
+% ----------------------------------------------------------
+% DADOS
+% ----------------------------------------------------------
+
+% Tipo de TCC (Monografia, Dissertação, Tese ou Relatório Técnico):
+\tipotrabalho{Dissertação}
+
+% Informações do TCC:
+\titulo{título do trabalho}              % título.
+\autor{Felipe Duplat Luz}                % autor.
+\local{Curitiba}                         % cidade.
+\data{2023}                              % ano.
+\orientador{Vinícius de Almeida Vale}    % orientador  - se homem.
+%\orientadora{}                          % orientadora - se mulher.
+%\coorientador{}                         % co-orientador  - se homem
+\coorientadora{Kênia Barreiro de Souza}  % co-orientadora - se mulher
+%\scoorientador{}                        % segundo co-orientador  - se mulher
+%\scoorientadora{}                       % segunda co-orientadora - se mulher
+
+% Adicionar referências:
+\addbibresource{Arquivos/Referências.bib}
+
+% Cabeçalho da capa:
+\instituicao{Universidade Federal do Paraná}
+\def \ImprimirSetor{Setor de Ciências Sociais Aplicadas}
+\def \ImprimirProgramaPos{Programa de Pós-Graduação em Desenvolvimento Econômico}
+\def \ImprimirCurso{}
+\preambulo{Projeto de dissertação de mestrado apresentada ao Programa de Pós-Graduação em Desenvolvimento Econômico do Setor de Ciências Sociais Aplicadas da Universidade Federal do Paraná como requisito para obtenção do título de mestre em Desenvolvimento Econômico}
+
+% Informações complementares:
+\newcommand{\imprimirCurso}{}
+\newcommand{\imprimirDataDefesa}{06 de março de 2024}
+\newcommand{\imprimircdu}{02:141:005.7}
+
+% Comandos de dados - Data da apresentação
+\providecommand{\imprimirdataapresentacaoRotulo}{}
+\providecommand{\imprimirdataapresentacao}{}
+\newcommand{\dataapresentacao}[2][\dataapresentacaoname]{\renewcommand{\dataapresentacao}{#2}}
+
+% Comandos de dados - Nome do Curso
+\providecommand{\imprimirnomedocursoRotulo}{}
+\providecommand{\imprimirnomedocurso}{}
+\newcommand{\nomedocurso}[2][\nomedocursoname]
+  {\renewcommand{\imprimirnomedocursoRotulo}{#1}
+\renewcommand{\imprimirnomedocurso}{#2}}
+
+

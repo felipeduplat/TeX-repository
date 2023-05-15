@@ -1,0 +1,65 @@
+
+%---------------------------------------------------------------------
+% TERMO DE APROVAÇÃO
+%---------------------------------------------------------------------
+
+% São duas opções possíveis: usar um PDF pronto ou usar o comando abaixo. Se quiser usar o PDF, basta inserir um arquivo .pdf na pasta "Pré" chamado "Termo de aprovação". Caso queira usar o comando, basta editá-lo abaixo de acordo com suas necessidades e depois remover o .pdf da pasta "Pré".
+
+\newcommand{\insereAprovacao}{
+	\IfFileExists{Pré/Termo de aprovação.pdf}
+	{\includepdf[pages=-]{Pré/Termo de aprovação.pdf}}
+	{
+		\begin{folhadeaprovacao}%\color{blue}
+			
+			\begin{center}
+				{\ABNTEXchapterfont
+					{\large\bfseries\MakeUppercase\folhadeaprovacaoname}\par\phantom{}\par
+					%\large
+					\MakeUppercase\imprimirautor}
+				
+				\vspace*{\fill}\vspace*{\fill}
+				\begin{center}
+					\ABNTEXchapterfont
+					%\bfseries\Large
+					\MakeUppercase\imprimirtitulo
+				\end{center}
+				\vspace*{\fill}
+				\begin{minipage}{\textwidth}
+					\hspace{.45\textwidth}
+					\begin{minipage}{.5\textwidth}
+						\imprimirpreambulo pela seguinte banca examinadora:
+					\end{minipage}%
+				\end{minipage}
+				
+				
+				\vspace*{\fill}
+			\end{center}
+			\assinatura{{
+					\ifthenelse{\equal{\imprimirorientador}{}}
+					{\imprimirorientadora \\ Orientadora}
+					{\imprimirorientador \\ Orientador}}
+			}
+			\assinatura{
+				{Kênia Barreiro de Souza} \\ Co-orientadora}
+			\assinatura{%\textbf
+				{Professor(a)} \\ Universidade XXX}
+			\assinatura{%\textbf
+				{Professor(a)} \\ Universidade XXX}
+			%\assinatura{%\textbf{Professor} \\ Convidado 4}
+			
+			\begin{center}
+				\vspace*{0.5cm}
+				%{\large\imprimirlocal}
+				%\par
+				%{\large\imprimirdata}
+				\imprimirlocal, \imprimirDataDefesa.
+				\vspace*{1cm}
+			\end{center}
+			
+		\end{folhadeaprovacao}
+	}
+}
+
+\insereAprovacao
+
+

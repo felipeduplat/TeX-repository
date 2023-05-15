@@ -1,0 +1,181 @@
+
+% ----------------------------------------------------------
+% PACOTES BÁSICOS
+% ----------------------------------------------------------
+
+\usepackage[T1]{fontenc}		     % seleção de códigos de fonte.
+\usepackage[utf8]{inputenc}		     % codificação do documento.
+\usepackage{lastpage}		     	 % para a Ficha catalográfica.
+\usepackage{indentfirst}     		 % indenta o primeiro parágrafo de cada seção.
+\usepackage{color}		         	 % controle das cores.
+\usepackage{graphicx}	     		 % inclusão de gráficos.
+\usepackage{microtype} 	     		 % para melhorias de justificação.
+\usepackage{ifthen}		         	 % para montar condicionais.
+\usepackage[brazil]{babel}	     	 % para utilizar termos em portugues.
+\usepackage[final]{pdfpages}         % para incluir páginas de arquivos pdf.
+\usepackage{lipsum}				     % para gerar dummy text.
+\usepackage{csquotes}                % para citações.
+%\usepackage[style=long]{glossaries} % para glossário.
+%\usepackage{abntex2glossaries}      % para glossário.
+\usepackage{cancel} 		         % cancelamento de termos em texto ou equações.
+\usepackage{xcolor} 		         % cores estendidas.
+\usepackage{smartdiagram}   	     % gera diagramas a partir de listas.
+\usepackage{float} 		             % para a figura ficar na posição correta.	    
+\usepackage{textcomp} 		         % suporte para fontes da Text Companion. 
+\usepackage{longtable}		         % uso de longtable.
+\usepackage{amsmath}		         % símbolos matematicos.
+\usepackage{lscape}		             % páginas em paisagem.
+\usepackage{multicol}		         % mescla de colunas em tabelas.
+\usepackage{multirow}		         % mescla de linhas em tabelas.
+\usepackage{newfloat} 		         % criação do indice de quadros.
+\usepackage{slashbox}                % para tabelas.
+\usepackage{makecell}                % para tabelas.
+
+% Para legendas:
+%\usepackage{caption}
+%[format=plain]
+%\renewcommand\caption[1]{
+%\captionsetup{font=small}
+%,format=hang
+%\caption{#1}}
+%\captionsetup{width=0.8\textwidth}
+\captiondelim{-- }
+\captiontitlefont{\small}
+\captionnamefont{\small}
+
+
+
+% ----------------------------------------------------------
+% FORMATAÇÃO
+% ----------------------------------------------------------
+
+% BibLaTeX:
+\usepackage[
+style=abnt,
+backref=true,
+backend=biber,
+citecounter=true,
+backrefstyle=three, 
+url=true,
+maxbibnames=99,
+mincitenames=1,
+maxcitenames=3,
+backref=false,
+hyperref=true,
+giveninits=true,
+uniquename=false,
+uniquelist=false]{biblatex}
+
+% Espaçamento entre os itens nas referências:
+%\setlength\bibitemsep{\baselineskip}
+
+% Texto padrão para as referências:
+\DefineBibliographyStrings{brazil}{%
+	 backrefpage  = {Citado \arabic{citecounter} vez na página},
+	 backrefpages = {Citado \arabic{citecounter} vezes nas páginas},
+	 urlfrom      = {Dispon\'ivel em},
+}
+
+% Indentação de referências:
+\defbibheading{bay}[\bibname]{
+\chapter*{#1}
+\markboth{#1}{#1}%
+\addcontentsline{toc}{chapter}
+%{\protect\numberline{}\bibname}
+{\bibname}}
+
+% Formatando o avanço dos títulos no sumário:
+\makeatletter
+	\pretocmd{\chapter}{\addtocontents{toc}{\protect\addvspace{-12\p@}}}{}{}
+	\pretocmd{\section}{\addtocontents{toc}{\protect\addvspace{-3\p@}}}{}{}
+\makeatother
+
+
+% Inserir maiúsculo na seção:
+% (https://groups.google.com/g/abntex2/c/ZYwE4t9uTFM)
+\makeatletter
+\let\oldcontentsline\contentsline
+\def\contentsline#1#2{%
+	\expandafter\ifx\csname l@#1\endcsname\l@section
+	\expandafter\@firstoftwo
+	\else
+	\expandafter\@secondoftwo
+	\fi
+	{%
+		\oldcontentsline{#1}{\MakeTextUppercase{#2}}%
+	}{%
+		\oldcontentsline{#1}{#2}%
+	}%
+}
+\makeatother
+
+% Retirar os símbolos <> da URL:
+\DeclareFieldFormat{illustrated}{\addspace #1\isdot}
+%\DeclareFieldFormat{url}{\bibstring{urlform}\addcolon\addspace<\url{#1}>}
+%\DeclareFieldFormat{url}{\bibstring{urlfrom}\addcolon\addspace<\url{#1}>}
+\DeclareFieldFormat{url}{\bibstring{urlfrom}\addcolon \space\addspace{#1}}
+
+% Ajustar o espaço para a formatação da data:
+\DeclareFieldFormat{urldate}{\bibstring{urlseen}\addcolon\addspace #1}%
+\DeclareFieldFormat*{note}{\addspace #1}%
+
+% Ajustar o tamanho da fonte do número da primeira página do capítulo (na parte textual):
+\makepagestyle{chapfirst}
+\makeoddhead{chapfirst}{}{}{\footnotesize{\thepage}}
+
+% Novo estilo de cabeçalhos e rodapés:
+\makepagestyle{simplestextual}
+
+% Cabeçalho para página par:
+\makeevenhead{simplestextual}
+  {}{}{\footnotesize \thepage}
+
+% Cabeçalho para página ímpar:
+\makeoddhead{simplestextual} %%pagina ímpar ou com oneside
+  {}{}{\footnotesize \thepage}
+
+% Linha no rodapé:  
+%\makeheadrule{simplestextual}{\textwidth}{\normalrulethickness}
+
+% Rodapé:
+\makeevenfoot{simplestextual}
+  {}{}{} %%pagina par
+
+% Página ímpar ou com oneside:      
+\makeoddfoot{simplestextual}
+  {}{}{}
+
+% Formatação dos capítulos póstextuais numerados:
+%\newcommand{\refap}[1]{\hyperref[#1]{Apêndice~\ref{#1}}} 	% Referência apêndices
+
+% uso do tikz e pgfplots:
+%\usetikzlibrary{external}
+\usetikzlibrary{arrows,calc,patterns,angles,quotes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+
+% Define o comando para citação de fontes em elementos gráficos:
+\newcommand{\citefig}[2]{~\Citeauthor*{#1}\citeyear{#1}}
+
+% Define os operadores matemáticos em português:
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\senh}{senh}
+%\DeclareMathOperator{\tag}{tag}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\tagh}{tagh}
+\DeclareMathOperator{\tgh}{tgh}
+\DeclareMathOperator{\cossec}{cossec}
+%\DeclareMathOperator{\sen}{sen}
+
+% Listagem de codigos LaTeX na documentação:
+\usepackage{listings}
+
+% Citação de documentos não publicados e informais e colocar nas notas de rodapé:
+\newcommand{\citenp}[1]{
+\cite{#1}\footnote{\fullcite{#1}}}
+
+\newcommand{\textcitenp}[1]{
+	\textcite{#1}\footnote{\fullcite{#1}}}
+
+

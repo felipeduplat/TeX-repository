@@ -1,0 +1,532 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% UNIVERSIDADE FEDERAL DO PARANÁ (UFPR)
+% SETOR DE CIÊNCIAS SOCIAIS APLICADAS
+% PÓS-GRADUAÇÃO EM DESENVOLVIMENTO ECONÔMICO (PPGDE)
+% DISCENTE: FELIPE DUPLAT LUZ
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% TRABALHO DE CONCLUSÃO DE CURSO (MONOGRAFIA, DISSERTAÇÃO OU TESE) %%%%%%
+
+%----------------------------------------------------------------
+%% Classe abntex2.cls:
+%% abntex2.cls, v-1.9.5 laurocesar
+%% Copyright 2012-2015 by abnTeX2 group at https://www.abntex.net.br/ 
+%%
+%----------------------------------------------------------------
+
+
+
+\ProvidesPackage{Arquivos/UFPR}
+
+% Pacotes:
+\RequirePackage[brazil]{babel}  % PT-BR
+\RequirePackage{suffix}         % para comando \criarsigla*
+\RequirePackage{tikz}           % usado para desenho
+\usepackage{mathptmx, tgtermes} % fontes em helvet/arial
+%tgtermes
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage{datatool} % listas de simbolos e abreviaturas
+\frenchspacing % espaçamentos entre linhas e parágrafos
+
+% O tamanho do parágrafo:
+\setlength{\parindent}{15mm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{2mm}  % tente também \onelineskip
+
+% Controle do espaçamento entre a legenda e a fonte (e nota) de figuras e tabelas:
+\setlength{\abovecaptionskip}{0mm}
+\setlength{\belowcaptionskip}{1mm}
+
+% Fontes padrões de part, chapter, section, subsection e subsubsection
+%----------------------------------------------------------------------------- 
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+\renewcommand{\ABNTEXchapterfontsize}{\large}
+
+\renewcommand{\ABNTEXpartfont}{\ABNTEXchapterfont}
+\renewcommand{\ABNTEXpartfontsize}{\ABNTEXchapterfontsize}
+
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
+\renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsectionfont}{\ABNTEXsectionfont}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsubsectionfont}{\ABNTEXsubsectionfont}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\ABNTEXsubsectionfont}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+%----------------------------------------------------------------------------- 
+
+\renewcommand{\cftchapterpagefont}{\cftsectionfont}
+
+\renewcommand{\cftsectionfont}{\normalfont}
+\renewcommand{\cftsectionpagefont}{\cftsectionfont}
+
+\renewcommand{\cftsubsectionfont}{\normalfont}
+\renewcommand{\cftsubsectionpagefont}{\cftsectionfont}
+
+\renewcommand{\cftsubsubsectionfont}{\normalfont}
+\renewcommand{\cftsubsubsectionpagefont}{\cftsectionfont}
+
+%----------------------------------------------------------------------------- 
+% Nomes constantes do abnTeX2 em portugues (definicoes padroes)
+%----------------------------------------------------------------------------- 
+\renewcommand{\folhadeaprovacaoname}{Termo de Aprovação}
+\renewcommand{\anexosname}{ANEXOS}
+\renewcommand{\apendicesname}{AP\^ENDICES}
+\renewcommand{\orientadorname}{Orientador:}
+\renewcommand{\coorientadorname}{Coorientador:}
+\newcommand{\orientadoraname}{Orientadora:}     % 2015/12/05
+\newcommand{\coorientadoraname}{Coorientadora:} % 2015/12/05
+\newcommand{\scoorientadorname}{Coorientador:}  % 2015/12/05
+\newcommand{\scoorientadoraname}{Coorientadora:}% 2015/12/05
+\renewcommand{\fontename}{Fonte:~}% 2015/12/05
+\renewcommand{\notaname}{Nota:~}  % 2015/12/05
+\renewcommand{\bibname}{Referências}
+\renewcommand{\indexname}{\'INDICE}
+
+% Adequando o uppercase titulo dos elementos nas suas respectivas LISTAS
+\renewcommand{\cftfigurename}{FIGURA\enspace}   
+\renewcommand{\cfttablename}{TABELA\enspace}
+
+
+% Comandos de dados - orientadora
+\providecommand{\imprimirorientadoraRotulo}{}
+\providecommand{\imprimirorientadora}{}
+\newcommand{\orientadora}[2][\orientadoraname]%
+  {\renewcommand{\imprimirorientadoraRotulo}{#1}%
+   \renewcommand{\imprimirorientadora}{#2}}
+
+% Comandos de dados - coorientadora
+\providecommand{\imprimircoorientadoraRotulo}{}
+\providecommand{\imprimircoorientadora}{}
+\newcommand{\coorientadora}[2][\coorientadoraname]%
+  {\renewcommand{\imprimircoorientadoraRotulo}{#1}%
+   \renewcommand{\imprimircoorientadora}{#2}}
+
+% Comandos de dados - segundo coorientador
+\providecommand{\imprimirscoorientadorRotulo}{}
+\providecommand{\imprimirscoorientador}{}
+\newcommand{\scoorientador}[2][\scoorientadorname]%
+  {\renewcommand{\imprimirscoorientadorRotulo}{#1}%
+   \renewcommand{\imprimirscoorientador}{#2}}
+   
+   % Comandos de dados - segunda coorientadora
+\providecommand{\imprimirscoorientadoraRotulo}{}
+\providecommand{\imprimirscoorientadora}{}
+\newcommand{\scoorientadora}[2][\scoorientadoraname]%
+  {\renewcommand{\imprimirscoorientadoraRotulo}{#1}%
+   \renewcommand{\imprimirscoorientadora}{#2}}
+
+
+
+% Folha de rosto
+%-----------------------------------------------------------------------------
+%   usar \imprimirfolhaderosto* casodeseje imprimir algo no verso da
+%   página no caso de estar no modo twoside. Util para imprimir a Ficha
+%   Bibliografica. Porem, se estiver no modo oneside, a versao sem estrela
+%   é identica.
+%----------------------------------------------------------------------------- 
+\renewenvironment{folhaderosto}[1][\folhaderostoname]{\clearpage\PRIVATEbookmarkthis{#1}}{\cleardoublepage}
+\renewenvironment{folhaderosto*}[1][\folhaderostoname]{\clearpage\PRIVATEbookmarkthis{#1}}{\newpage}%
+
+
+
+% CONFIGURACAO DO SUMÁRIO   
+%----------------------------------------------------------------------------- 
+% Modifica o espaçamento no sumário 
+% Nao ha espacos, exceto para as entradas de capitulos 
+\setlength{\cftbeforechapterskip}{18pt}
+\setlength{\cftbeforesectionskip}{5pt}
+\setlength{\cftbeforesubsectionskip}{0pt}
+\setlength{\cftbeforesubsubsectionskip}{0pt}
+\setlength{\cftbeforeparagraphskip}{0pt}
+
+%% Alteração da indentação dos itens do sumário
+%\cftsetindents{chapter}{0pt}{42pt}
+%\cftsetindents{section}{0pt}{42pt}
+%\cftsetindents{subsection}{0pt}{42pt}
+%\cftsetindents{subsubsection}{0pt}{42pt}
+
+% Modifica a formatação dos textos 
+ 
+% Seção Primária (Chapter): Caixa alta, Negrito, tamanho 12
+\makeatletter
+\settocpreprocessor{chapter}{% 
+  \let\tempf@rtoc\f@rtoc% 
+  \def\f@rtoc{% 
+  \texorpdfstring{\bfseries\protect\MakeTextUppercase{\tempf@rtoc}}{\tempf@rtoc}}% 
+} 
+\makeatother
+
+
+
+
+
+% Siglas
+%----------------------------------------------------------------------------- 
+\makeatletter
+
+	\newcommand\criarsigla[2]{%
+		\write\@auxout{\noexpand\@writefile{sig}
+			      {\noexpand\sortitem{#1} {#2}}}}
+	
+	\WithSuffix\newcommand\criarsigla*[2]{%
+		\write\@auxout{\noexpand\@writefile{sig}
+			      {\noexpand\sortitem{#1} {#2}}}
+		              #2~(#1)}
+		
+	\newcommand{\sortitem}[2]{%
+		\DTLnewrow{list}%
+		\DTLnewdbentry{list}{label}{#1}%
+		\DTLnewdbentry{list}{description}{#2}%
+	}
+
+	\newenvironment{sortedList}{%
+		\DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}%
+	}
+	{
+		\DTLsort{label}{list}%
+		\begin{description}[labelsep=15mm, align=left, 
+		                    labelwidth=25mm,
+		                    leftmargin=40mm, labelindent=0mm]%
+			
+\DTLforeach*{list}{\theLabel=label,\theDesc=description}{\item[\theLabel] \theDesc}		
+	
+		\end{description}
+	}
+
+	\newcommand\imprimirlistadesiglas{
+	
+		\begin{center}
+			{\ABNTEXchapterfont{LISTA DE ABREVIATURAS E DE 	SIGLAS}}
+			\vspace*{1.1cm}
+			\begin{sortedList}
+				\fontfamily{cmss}\@starttoc{sig}
+			\end{sortedList}
+		\end{center}
+	}
+
+\makeatother
+
+
+
+% Símbolos
+%----------------------------------------------------------------------------- 
+\makeatletter
+	\newcommand\criarsimbolo[2]{%
+		\write\@auxout{\noexpand\@writefile{sbl}{
+				\noexpand\sortitem{#1}{\ignorespaces#2}}} #1
+		}
+		        
+	\newenvironment{sortedsimb}{%
+		\DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}%
+	    }
+    	{
+		\DTLsort{description}{list}%
+		\begin{description}
+		    [labelsep=2mm, 
+		     labelwidth=25mm, 
+		     leftmargin = 22mm]%
+			
+            \DTLforeach*{list}
+                {\theLabel=label,\theDesc=description}
+                {\item[\theLabel] \theDesc}		
+		\end{description}
+	    }		        
+		        
+	\newcommand\imprimirlistadesimbolos{%
+		\begin{center}
+			{\ABNTEXchapterfont{LISTA DE S\'IMBOLOS}}
+			\vspace*{1.1cm}
+		\begin{sortedsimb}
+			  \@starttoc{sbl}
+		\end{sortedsimb}
+	    \end{center}
+	}
+\makeatother
+
+%
+\newcommand{\tocfont}{\normalsize}	% define tamanho de fonte para sumário como normal	
+
+% Configurações de aparência do PDF final
+% ----------------------------------------------------------
+
+% informações do PDF
+% ----------------------------------------------------------
+\makeatletter
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    %pdfstartview={FitW},   % fits the width of the page to the window
+    pdftitle={},            % title
+    pdfauthor={},           % author
+    pdfsubject={},          % subject of the document
+    pdfcreator={},          % creator of the document
+    pdfproducer={},         % producer of the document
+    pdfkeywords={},         % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,        % false: boxed links; true: colored links
+    linkcolor=black,        % color of internal links
+    citecolor=MidnightBlue, % color of links to bibliography
+    filecolor=MidnightBlue, % color of file links
+    urlcolor=MidnightBlue   % color of url
+}
+\makeatother
+
+% Citação de acordo com a norma da UFPR 2015-agosto
+% ----------------------------------------------------------
+\renewenvironment{quotation}
+    {\vspace{.5\baselineskip}
+	\list{}{
+	    \listparindent 0em%
+		\SingleSpacing
+		\itemindent    
+		\listparindent
+		\rightmargin= 0mm
+        \leftmargin = 45mm
+        \parsep     = 0mm}%\z@ \@plus\p@}%
+        \item\relax}
+        {
+        \vspace{.5\baselineskip}
+        \endlist
+        }
+        
+\newenvironment{citacaodireta}
+{\begin{quotation}\footnotesize}
+{\end{quotation}}        
+
+% para comentarios e sugestões
+% ----------------------------------------------------------
+\newcommand{\sugest}[1]{\textcolor{red!40}{#1}}
+
+% simplificação para colocar figuras
+% ----------------------------------------------------------
+%   Parametros
+%    1 caption
+%    2 percent textwidth
+%    3 arquivo da figura
+%    4 fonte
+%    5 fig:label
+%    6 nota
+%    7 legenda
+
+\newcommand{\figura}[7]{
+  {\centering
+   \footnotesize
+   \begin{figure}[!ht]
+   \centering
+        \caption{\uppercase{#1}}
+        \includegraphics[width=#2\textwidth]{#3}
+        \label{fig:#5}
+    
+    %ajustado p/ a largura da imagem
+    \begin{minipage}{#2\textwidth} 
+        \vspace{2mm}\centering
+        %\begin{flushleft}
+            \par FONTE:~#4
+            \ifthenelse{\equal{#6}{}}{}
+            { \par\hangindent=14mm NOTA: #6 }
+            
+            \ifthenelse{\equal{#7}{}}{}
+            { \par\hangindent=14mm LEGENDA: #7 }
+        %\end{flushleft}
+    \end{minipage}
+    \end{figure}
+    }
+}
+
+
+% simplificação para colocar figuras cortadas
+% ----------------------------------------------------------
+%   Parametros
+%    1 caption
+%    2 percent textwidth
+%    3 arquivo da figura
+%    4 fonte
+%    5 fig:label
+%    6 nota
+%    7 legenda
+%    8 recorte esquerda direita em mm
+%    9 recorte inferior superior em mm
+
+\newcommand{\figurac}[9]{
+ \centering\footnotesize
+    \begin{figure}[!ht]
+    {\centering
+        \caption{\uppercase{#1}}
+        \includegraphics[width=#2\textwidth, trim={#8mm #9 #8 #9},clip]{#3}
+        \label{fig:#5}
+        
+    %ajustado p/ a largura da imagem
+    \begin{minipage}{#2\textwidth} 
+        \vspace{2mm}\centering
+        %\begin{flushleft}
+            \par FONTE:~#4
+            \ifthenelse{\equal{#6}{}}{}
+            {\par \hangindent=14mm NOTA: #6 }
+          
+            \ifthenelse{\equal{#7}{}}{}
+            {\par \hangindent=14mm   LEGENDA: #7 }
+        %\end{flushleft}
+    \end{minipage}
+    }
+    \end{figure}
+ 
+}
+
+% simplificação para colocar imagens
+% ----------------------------------------------------------
+%   Parametros
+%    1 caption
+%    2 tabela
+%    3 fonte
+%    4 tab:label
+%    5 nota
+%    6 legenda
+
+\newsavebox{\myboxa}
+\newlength{\myboxlena}
+
+\newcommand{\imagem}[6]{
+	{
+	\centering\footnotesize
+  	    \sbox{\myboxa}{#2}
+		\settowidth{\myboxlena}{\usebox{\myboxa}}
+		\noindent
+		\begin{figure}[!ht]
+			\centering
+			\caption{\uppercase{#1}}
+			#2
+			\label{fig:#4}
+			
+			%ajustado p/ a largura da imagem
+			\begin{minipage}{\myboxlena} \footnotesize
+				\vspace{2mm}\centering
+				%\begin{flushleft}
+				\par FONTE:~#3
+				\ifthenelse{\equal{#5}{}}{}
+				{ \par\hangindent=14mm NOTA: #5 }
+				
+				\ifthenelse{\equal{#6}{}}{}
+				{ \par\hangindent=14mm LEGENDA: #6 }
+				%\end{flushleft}
+			\end{minipage}
+		\end{figure}
+	}
+}
+
+% simplificação para colocar tabelas
+% ----------------------------------------------------------
+%   Parametros
+%    1 caption
+%    2 tabela
+%    3 fonte
+%    4 tab:label
+%    5 nota
+%    6 legenda
+
+\newsavebox{\mybox}
+\newlength{\myboxlen}
+
+\newcommand{\tabela}[6]
+{
+  \sbox{\mybox}{#2}
+  \settowidth{\myboxlen}{\usebox{\mybox}}
+  \noindent
+  %\rule{\myboxlen}{1pt}\\
+  \begin{table}[!ht]
+    \centering\footnotesize
+    \par\caption{\uppercase{#1}}
+    
+    \par  #2
+ 
+    \label{tab:#4}
+ 
+     \begin{minipage}{\myboxlen} 
+        \vspace{2mm}\footnotesize
+        %\begin{flushleft}
+            FONTE:~ #3
+            
+            \ifthenelse{\equal{#5}{}}{}
+            {\hangindent=14mm NOTA: #5 }
+            
+            \ifthenelse{\equal{#6}{}}{}
+            {\hangindent=14mm LEGENDA: #6}
+        %\end{flushleft}
+    \end{minipage}
+\end{table}
+  % \centering
+  % \usebox{\mybox}
+  % box size: \the\myboxlen.
+}
+
+% Ambiente e lista de quadros
+% ----------------------------------------------------------
+\newfloat{quadro}{quadros}{QUADRO}
+\newlistof{listofquadros}{quadros}{Lista de Quadros}
+\newlistentry{quadro}{quadros}{0}
+\cftsetindents{quadro}{0mm}{13mm}
+
+%\PrepareListOf{quadro}{%
+\renewcommand{\cftquadropresnum}{\normalsize{QUADRO}~}
+\setlength{\cftquadronumwidth}{28mm}
+%\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+%}
+
+\newsavebox{\myboxq}
+\newlength{\myboxlenq}
+
+% ----------------------------------------------------------
+%   Parâmetros
+%    1 caption
+%    2 tabela/quadro
+%    3 fonte
+%    4 qua:label
+%    5 nota
+%    6 legenda
+
+\newcommand{\qquadro}[6]
+  {
+   
+   %\begin{center}
+   \sbox{\myboxq}{#2}
+   \settowidth{\myboxlenq}{\usebox{\myboxq}}
+   \begin{quadro} \footnotesize
+        \caption{\uppercase{#1}}
+	\label{qua:#4}
+        \noindent 
+        
+        #2 %placed inside the environment
+	
+   			
+        %ajustado p/ a largura da tabela (quadro) se menor que 30mm a largura é ajustada para .5\linewidth
+	 
+        \ifdimcomp {\myboxlenq}{<}{30mm}{\settowidth{\myboxlenq}{\hspace{.5\linewidth}}}{}
+    	
+	\begin{minipage}{\myboxlenq} \footnotesize
+    	    \vspace{2mm}\centering
+    		%\begin{flushleft}
+    		\par FONTE:~#3
+    		\ifthenelse{\equal{#5}{}}{}
+    		{ \par\hangindent=14mm NOTA: #5 }
+    				
+    		\ifthenelse{\equal{#6}{}}{}
+    		{ \par\hangindent=14mm LEGENDA: #6 }
+    		%\end{flushleft}
+    	\end{minipage}
+    %\end{center}
+    \label{qua:#4}
+  \end{quadro}
+  }
+
+

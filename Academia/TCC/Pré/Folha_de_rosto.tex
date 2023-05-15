@@ -1,0 +1,67 @@
+
+%---------------------------------------------------------------------
+% FOLHA DE ROSTO
+%---------------------------------------------------------------------
+
+\makeatletter
+\renewcommand{\folhaderostocontent}{
+	\begin{center}
+		
+		%\vspace*{1cm}
+		{
+			%\ABNTEXchapterfont
+			%\large
+			\MakeUppercase\imprimirautor}
+		
+		\vspace*{\fill}%\vspace*{\fill}
+		\begin{center}
+			%      \ABNTEXchapterfont
+			%\bfseries
+			%\Large
+			\MakeUppercase\imprimirtitulo
+		\end{center}
+		\vspace*{\fill}
+		
+		\abntex@ifnotempty{\imprimirpreambulo}{%
+			\hspace{.45\textwidth}
+			\begin{minipage}{.5\textwidth}
+				\SingleSpacing\small
+				\imprimirpreambulo.\vspace*{2mm}
+				
+				\abntex@ifnotempty{\imprimirorientador}
+				{\imprimirorientadorRotulo~\imprimirorientador}
+				\ifthenelse{\equal{\imprimirorientador}{}}
+				{\imprimirorientadoraRotulo~\imprimirorientadora}
+				{}
+				\abntex@ifnotempty{\imprimircoorientador}
+				{\par\imprimircoorientadorRotulo~\imprimircoorientador}%
+				{\abntex@ifnotempty{\imprimircoorientadora}
+					{\par\imprimircoorientadoraRotulo~\imprimircoorientadora}%
+				}
+				\ifthenelse{\equal{\imprimirscoorientadora}{} \AND \equal{\imprimirscoorientador}{}}{}
+				{
+					\ifthenelse{\equal{\imprimirscoorientador}{}}{}
+					{\par\imprimirscoorientadorRotulo~\imprimirscoorientador}
+					\ifthenelse{\equal{\imprimirscoorientadora}{}}{}
+					{\par\imprimirscoorientadoraRotulo~\imprimirscoorientadora}
+				}%
+				%
+			\end{minipage}%
+			\vspace*{\fill}
+		}%
+		
+		\vspace*{\fill}
+		
+		
+		{  \MakeUppercase\imprimirlocal}
+		\par
+		{    \imprimirdata}
+		\vspace*{1cm}
+		
+	\end{center}
+}
+\makeatother
+
+\imprimirfolhaderosto*
+
+

@@ -71,7 +71,7 @@ Feito para apresentação de artigos e trabalhos acadêmicos.
 
 #### TCC:
 
-Baseado no modelo [USPSC](http://biblioteca.puspsc.usp.br/index.php/pacote-uspsc-modelo-para-teses-e-dissertacoes-em-latex/), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado da Faculdade de Ciências Econômicas da UFPR. Para escolher entre um dos três, basta alterar a linha do _script_.
+Baseado no modelo [padrão da UFPR](https://github.com/eekBR/ufpr-abntex2), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado.
 
 <p align="center">
   <img width="300" height="400" src="https://github.com/felipeduplat/private/blob/main/009.png">
@@ -120,11 +120,7 @@ Feito para apresentações voltadas ao mercado de trabalho.
 
 - :mortar_board: TCC
 
-Por alguma razão, a compilação apresenta alguns erros na parte textual e pós-textual, apesar de ainda conseguir gerar o arquivo PDF. Acredito que seja por conta da última atualização do MikTeX que causou algum problema de compatibilidade com os pacotes utilizados. Há duas soluções temporárias:
-
-<kbd> → </kbd> ignorar :smiling_face_with_tear:; ou
-
-<kbd> → </kbd> compilar no [Overleaf](https://overleaf.com/).
+~~Por alguma razão, a compilação apresenta alguns erros na parte textual e pós-textual, apesar de ainda conseguir gerar o arquivo PDF. Acredito que seja por conta da última atualização do MikTeX que causou algum problema de compatibilidade com os pacotes utilizados.~~ _corrigido_.
 
 
 

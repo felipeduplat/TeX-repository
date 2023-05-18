@@ -17,8 +17,6 @@
 %%
 %----------------------------------------------------------------
 
-
-
 \ProvidesPackage{Arquivos/UFPR}
 
 % Pacotes:
@@ -60,6 +58,7 @@
 
 \renewcommand{\ABNTEXsubsubsubsectionfont}{\ABNTEXsubsectionfont}
 \renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+
 %----------------------------------------------------------------------------- 
 
 \renewcommand{\cftchapterpagefont}{\cftsectionfont}
@@ -94,7 +93,6 @@
 \renewcommand{\cftfigurename}{FIGURA\enspace}   
 \renewcommand{\cfttablename}{TABELA\enspace}
 
-
 % Comandos de dados - orientadora
 \providecommand{\imprimirorientadoraRotulo}{}
 \providecommand{\imprimirorientadora}{}
@@ -123,35 +121,8 @@
   {\renewcommand{\imprimirscoorientadoraRotulo}{#1}%
    \renewcommand{\imprimirscoorientadora}{#2}}
 
-
-
-% Folha de rosto
-%-----------------------------------------------------------------------------
-%   usar \imprimirfolhaderosto* casodeseje imprimir algo no verso da
-%   página no caso de estar no modo twoside. Util para imprimir a Ficha
-%   Bibliografica. Porem, se estiver no modo oneside, a versao sem estrela
-%   é identica.
-%----------------------------------------------------------------------------- 
 \renewenvironment{folhaderosto}[1][\folhaderostoname]{\clearpage\PRIVATEbookmarkthis{#1}}{\cleardoublepage}
 \renewenvironment{folhaderosto*}[1][\folhaderostoname]{\clearpage\PRIVATEbookmarkthis{#1}}{\newpage}%
-
-
-
-% CONFIGURACAO DO SUMÁRIO   
-%----------------------------------------------------------------------------- 
-% Modifica o espaçamento no sumário 
-% Nao ha espacos, exceto para as entradas de capitulos 
-\setlength{\cftbeforechapterskip}{18pt}
-\setlength{\cftbeforesectionskip}{5pt}
-\setlength{\cftbeforesubsectionskip}{0pt}
-\setlength{\cftbeforesubsubsectionskip}{0pt}
-\setlength{\cftbeforeparagraphskip}{0pt}
-
-%% Alteração da indentação dos itens do sumário
-%\cftsetindents{chapter}{0pt}{42pt}
-%\cftsetindents{section}{0pt}{42pt}
-%\cftsetindents{subsection}{0pt}{42pt}
-%\cftsetindents{subsubsection}{0pt}{42pt}
 
 % Modifica a formatação dos textos 
  
@@ -166,103 +137,13 @@
 
 
 
-
-
-% Siglas
-%----------------------------------------------------------------------------- 
-\makeatletter
-
-	\newcommand\criarsigla[2]{%
-		\write\@auxout{\noexpand\@writefile{sig}
-			      {\noexpand\sortitem{#1} {#2}}}}
-	
-	\WithSuffix\newcommand\criarsigla*[2]{%
-		\write\@auxout{\noexpand\@writefile{sig}
-			      {\noexpand\sortitem{#1} {#2}}}
-		              #2~(#1)}
-		
-	\newcommand{\sortitem}[2]{%
-		\DTLnewrow{list}%
-		\DTLnewdbentry{list}{label}{#1}%
-		\DTLnewdbentry{list}{description}{#2}%
-	}
-
-	\newenvironment{sortedList}{%
-		\DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}%
-	}
-	{
-		\DTLsort{label}{list}%
-		\begin{description}[labelsep=15mm, align=left, 
-		                    labelwidth=25mm,
-		                    leftmargin=40mm, labelindent=0mm]%
-			
-\DTLforeach*{list}{\theLabel=label,\theDesc=description}{\item[\theLabel] \theDesc}		
-	
-		\end{description}
-	}
-
-	\newcommand\imprimirlistadesiglas{
-	
-		\begin{center}
-			{\ABNTEXchapterfont{LISTA DE ABREVIATURAS E DE 	SIGLAS}}
-			\vspace*{1.1cm}
-			\begin{sortedList}
-				\fontfamily{cmss}\@starttoc{sig}
-			\end{sortedList}
-		\end{center}
-	}
-
-\makeatother
-
-
-
-% Símbolos
-%----------------------------------------------------------------------------- 
-\makeatletter
-	\newcommand\criarsimbolo[2]{%
-		\write\@auxout{\noexpand\@writefile{sbl}{
-				\noexpand\sortitem{#1}{\ignorespaces#2}}} #1
-		}
-		        
-	\newenvironment{sortedsimb}{%
-		\DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}%
-	    }
-    	{
-		\DTLsort{description}{list}%
-		\begin{description}
-		    [labelsep=2mm, 
-		     labelwidth=25mm, 
-		     leftmargin = 22mm]%
-			
-            \DTLforeach*{list}
-                {\theLabel=label,\theDesc=description}
-                {\item[\theLabel] \theDesc}		
-		\end{description}
-	    }		        
-		        
-	\newcommand\imprimirlistadesimbolos{%
-		\begin{center}
-			{\ABNTEXchapterfont{LISTA DE S\'IMBOLOS}}
-			\vspace*{1.1cm}
-		\begin{sortedsimb}
-			  \@starttoc{sbl}
-		\end{sortedsimb}
-	    \end{center}
-	}
-\makeatother
-
-%
-\newcommand{\tocfont}{\normalsize}	% define tamanho de fonte para sumário como normal	
-
-% Configurações de aparência do PDF final
 % ----------------------------------------------------------
-
 % informações do PDF
 % ----------------------------------------------------------
 \makeatletter
 \hypersetup{
-    bookmarks=true,         % show bookmarks bar?
-    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    bookmarksnumbered,
+    unicode=true,           % non-Latin characters in Acrobat’s bookmarks
     pdftoolbar=true,        % show Acrobat’s toolbar?
     pdfmenubar=true,        % show Acrobat’s menu?
     pdffitwindow=false,     % window fit to page when opened

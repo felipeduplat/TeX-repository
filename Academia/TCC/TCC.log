@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.5.14)  15 MAY 2023 13:21
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.5.14)  18 MAY 2023 19:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -522,6 +522,16 @@ Package: babel 2023/05/11 v3.89 The Babel package
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
+(C:\Users\dupla\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
+df
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+)
 (C:\Users\dupla\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
 df
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
@@ -542,6 +552,11 @@ Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
 -spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
+)
+(C:\Users\dupla\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel
+-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
 )
 (C:\Users\dupla\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -1179,20 +1194,14 @@ Package: fp-eval 1995/04/03
 \dtl@entrycr=\count403
 \dtl@omitlines=\count404
 )
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 163.
 
-Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 282.
-
-Package hyperref Info: Option `unicode' set `false' on input line 282.
-
-Package hyperref Warning: XeTeX driver only supports `unicode=true'. Ignoring
-(hyperref)                option setting `unicode=false' on input line 282.
-
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 282.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 282.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 282.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 282.
-Package hyperref Info: Option `colorlinks' set `true' on input line 282.
+Package hyperref Info: Option `unicode' set `true' on input line 163.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 163.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 163.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 163.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 163.
+Package hyperref Info: Option `colorlinks' set `true' on input line 163.
 \myboxa=\box71
 \myboxlena=\skip261
 \mybox=\box72
@@ -1204,7 +1213,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 282.
 \cftquadronumwidth=\skip265
 \myboxq=\box73
 \myboxlenq=\skip266
-) (Arquivos/Formatação.tex
+)
+(Arquivos/Formatação.tex
 (C:\Users\dupla\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+qtm on input line 11
@@ -1958,54 +1968,50 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazil'.
-
-
-LaTeX Warning: Unused global option(s):
-    [subsection].
-
-(TCC.aux (Pré/Capa.aux) (Pré/Folha_de_rosto.aux) (Pré/Ficha_catalográfica.aux)
-(Pré/Errata.aux) (Pré/Termo_de_aprovação.aux) (Pré/Dedicatória.aux)
-(Pré/Agradecimentos.aux) (Pré/Epígrafe.aux) (Pré/Resumo.aux) (Pré/Abstract.aux)
-(Pré/Listas.aux) (Capítulos/1_Introdução.aux)
-(Capítulos/2_Revisão_de_literatura.aux) (Capítulos/3_Metodologia_e_dados.aux)
-(Capítulos/4_Resultados.aux) (Capítulos/5_Considerações_finais.aux))
+ (TCC.aux (Pré/Capa.aux) (Pré/Folha_de_rosto.aux)
+(Pré/Ficha_catalográfica.aux) (Pré/Errata.aux) (Pré/Termo_de_aprovação.aux)
+(Pré/Dedicatória.aux) (Pré/Agradecimentos.aux) (Pré/Epígrafe.aux)
+(Pré/Resumo.aux) (Pré/Abstract.aux) (Pré/Listas.aux)
+(Capítulos/1_Introdução.aux) (Capítulos/2_Revisão_de_literatura.aux)
+(Capítulos/3_Metodologia_e_dados.aux) (Capítulos/4_Resultados.aux)
+(Capítulos/5_Considerações_finais.aux) (Pós/Apêndice.aux) (Pós/Anexo.aux))
 \openout1 = `TCC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-1.
+0.
 
 (C:\Users\dupla\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-Package hyperref Info: Link coloring ON on input line 51.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+Package hyperref Info: Link coloring ON on input line 50.
 \myptabbox=\box140
 \myptabboxwidth=\skip296
-LaTeX Info: Redefining \microtypecontext on input line 51.
-Package microtype Info: Applying patch `item' on input line 51.
-Package microtype Info: Applying patch `toc' on input line 51.
-Package microtype Info: Applying patch `eqnum' on input line 51.
-Package microtype Info: Applying patch `footnote' on input line 51.
-Package microtype Info: Applying patch `verbatim' on input line 51.
+LaTeX Info: Redefining \microtypecontext on input line 50.
+Package microtype Info: Applying patch `item' on input line 50.
+Package microtype Info: Applying patch `toc' on input line 50.
+Package microtype Info: Applying patch `eqnum' on input line 50.
+Package microtype Info: Applying patch `footnote' on input line 50.
+Package microtype Info: Applying patch `verbatim' on input line 50.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -2184,8 +2190,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'TCC.bbl' found.
  (TCC.bbl)
-Package biblatex Info: Reference section=0 on input line 51.
-Package biblatex Info: Reference segment=0 on input line 51.
+Package biblatex Info: Reference section=0 on input line 50.
+Package biblatex Info: Reference segment=0 on input line 50.
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
@@ -2255,41 +2261,46 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \openout2 = `Pré/Ficha_catalográfica.aux'.
 
  (Pré/Ficha_catalográfica.tex
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
  []
 
 
-Overfull \hbox (15.89636pt too wide) in paragraph at lines 60--60
-[]  [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
 [2
 
 
@@ -2298,6 +2309,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 \openout2 = `Pré/Errata.aux'.
 
  (Pré/Errata.tex) [3
+
 
 
 
@@ -2347,12 +2359,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 ])
 \openout2 = `Pré/Abstract.aux'.
 
- (Pré/Abstract.tex
-(C:\Users\dupla\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel
--english.tex
-Package babel Info: Importing basic data for english
-(babel)             from babel-en.ini. Reported on input line 11.
-) [9
+ (Pré/Abstract.tex [9
 
 
 
@@ -2365,23 +2372,27 @@ Package babel Info: Importing basic data for english
 
 
 
-] (TCC.quadros) [11
+] (TCC.quadros)
+[11
 
-] (TCC.lot)
-[12
+] (TCC.lot) [12
 
 ] [13
 
 
-] [14
-
-
-] (TCC.toc)) [15
+] (TCC.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+)) [14
 
 ]
 \openout2 = `Capítulos/1_Introdução.aux'.
 
- (Capítulos/1_Introdução.tex) [16
+ (Capítulos/1_Introdução.tex) [15
 
 
 
@@ -2390,7 +2401,7 @@ Package babel Info: Importing basic data for english
 \openout2 = `Capítulos/2_Revisão_de_literatura.aux'.
 
 
-(Capítulos/2_Revisão_de_literatura.tex) [17
+(Capítulos/2_Revisão_de_literatura.tex) [16
 
 
 
@@ -2399,7 +2410,7 @@ Package babel Info: Importing basic data for english
 \openout2 = `Capítulos/3_Metodologia_e_dados.aux'.
 
 
-(Capítulos/3_Metodologia_e_dados.tex) [18
+(Capítulos/3_Metodologia_e_dados.tex) [17
 
 
 
@@ -2408,7 +2419,7 @@ Package babel Info: Importing basic data for english
 \openout2 = `Capítulos/4_Resultados.aux'.
 
  (Capítulos/4_Resultados.tex)
-[19
+[18
 
 
 
@@ -2416,25 +2427,46 @@ Package babel Info: Importing basic data for english
 ]
 \openout2 = `Capítulos/5_Considerações_finais.aux'.
 
- (Capítulos/5_Considerações_finais.tex) [20
+ (Capítulos/5_Considerações_finais.tex) [19
 
 
 
 
 ]
-
-Package biblatex Warning: Keyword 'consulta' not found on input line 107.
-
-
-LaTeX Warning: Empty bibliography on input line 107.
-
-(Pós/Apêndice.tex [21
+Missing character: There is no ’ in font ec-qtmr!
+[20
 
 
 
-]) (Pós/Anexo.tex [22
+]
+\openout2 = `Pós/Apêndice.aux'.
 
-]) [23
+ (Pós/Apêndice.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 9.
+
+[21
+
+
+
+]) [22
+
+]
+\openout2 = `Pós/Anexo.aux'.
+
+ (Pós/Anexo.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 9.
+
+[23
+
+
+
+
+
+]) [24
 
 ]
 \tf@lof=\write7
@@ -2449,26 +2481,34 @@ LaTeX Warning: Empty bibliography on input line 107.
 \tf@toc=\write10
 \openout10 = `TCC.toc'.
 
-
-
+ 
 enddocument/afterlastpage: lastpage setting LastPage.
 (TCC.aux (Pré/Capa.aux) (Pré/Folha_de_rosto.aux) (Pré/Ficha_catalográfica.aux)
 (Pré/Errata.aux) (Pré/Termo_de_aprovação.aux) (Pré/Dedicatória.aux)
 (Pré/Agradecimentos.aux) (Pré/Epígrafe.aux) (Pré/Resumo.aux) (Pré/Abstract.aux)
 (Pré/Listas.aux) (Capítulos/1_Introdução.aux)
 (Capítulos/2_Revisão_de_literatura.aux) (Capítulos/3_Metodologia_e_dados.aux)
-(Capítulos/4_Resultados.aux) (Capítulos/5_Considerações_finais.aux))
+(Capítulos/4_Resultados.aux) (Capítulos/5_Considerações_finais.aux)
+(Pós/Apêndice.aux) (Pós/Anexo.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                TCC
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'TCC.run.xml'.
 \openout1 = `TCC.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54273 strings out of 411497
- 1167210 string characters out of 5818359
- 2370014 words of memory out of 5000000
- 73519 multiletter control sequences out of 15000+600000
- 548843 words of font info for 79 fonts, out of 8000000 for 9000
+ 54313 strings out of 411497
+ 1168908 string characters out of 5818359
+ 2378363 words of memory out of 5000000
+ 73550 multiletter control sequences out of 15000+600000
+ 556973 words of font info for 97 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 115i,12n,118p,1150b,5369s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,12n,118p,1150b,4994s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TCC.pdf (24 pages).
+Output written on TCC.pdf (25 pages).

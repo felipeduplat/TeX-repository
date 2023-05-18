@@ -5,7 +5,7 @@
 
 % São duas opções possíveis: usar um PDF pronto ou usar o comando abaixo. Se quiser usar o PDF, basta inserir um arquivo .pdf na pasta "Pré" chamado "Ficha catalográfica". Caso queira usar o comando, basta editá-lo abaixo de acordo com suas necessidades e depois remover o .pdf da pasta "Pré".
 
-\newcommand{\PalavraschaveTexto}{}
+\newcommand{\PalavraschaveTexto}{Palavra 01. Palavra 02. Palavra 03.}
 
 \newcommand{\insereFichaCatalografica}{ 
 		\IfFileExists{Pré/Ficha catalográfica.pdf}
@@ -17,38 +17,25 @@
 			\begin{center}					% Minipage Centralizado
 				\begin{minipage}[c]{12.5cm}		% Largura
 					
-					\imprimirautor
+					Luz, Felipe Duplat
 					
 					\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
-					\imprimirlocal, \imprimirdata-
+					\imprimirlocal, \imprimirdata.
 					
-					\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+					\hspace{0.5cm} \pageref{LastPage} p. : il. color \\
 					
-					\hspace{0.5cm} 
-					\ifthenelse{\equal{\imprimirorientador}{}}
-					{\imprimirorientadoraRotulo~\imprimirorientadora}
-					{\imprimirorientadorRotulo~\imprimirorientador}
-					\\
+					\hspace{0.5cm} \imprimirtipotrabalho (mestrado) - \imprimirinstituicao. \ImprimirProgramaPos, do \ImprimirSetor. \\ 
 					
-					\hspace{5mm}
-					\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
-						\imprimirdata.}\\
+					\hspace{0.5cm} Orientador: \imprimirorientador \\
 					
-					\hspace{5mm}
-					\begin{minipage}{.80\textwidth}
-						1. \PalavraschaveTexto
+					\hspace{0.5cm} Coorientadora: \imprimircoorientadora \\
+					
+					\hspace{0.5cm} Defesa: \imprimirlocal, \imprimirdata. \\
+					
+					\begin{minipage}{.96\textwidth}
+						\hspace{0.5cm} 1. \PalavraschaveTexto. I. \imprimirinstituicao. \ImprimirSetor. \ImprimirProgramaPos. II. \imprimirorientador. III. \imprimircoorientadora. IV. \imprimirtitulo\\ 
 						
-						I. 	\ifthenelse{\equal{\imprimirorientador}{}}
-						{\imprimirorientadoraRotulo~\imprimirorientadora}
-						{\imprimirorientadorRotulo~\imprimirorientador}.
-						
-						II. \imprimirinstituicao
-						
-						III. \imprimirCurso
-						
-						IV. \imprimirtitulo\\ 
-						
-						\hspace{70mm} CDU \imprimircdu \\
+						\hspace{92mm} CDU \imprimircdu \\
 					\end{minipage}
 				\end{minipage}
 			\end{center}

@@ -2443,12 +2443,6 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">Arquivos/Referências.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">anderson20</bcf:citekey>
-    <bcf:citekey order="1" intorder="2">campostimini22</bcf:citekey>
-    <bcf:citekey order="1" intorder="3">do09</bcf:citekey>
-    <bcf:citekeycount count="1">anderson20</bcf:citekeycount>
-    <bcf:citekeycount count="1">campostimini22</bcf:citekeycount>
-    <bcf:citekeycount count="1">do09</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

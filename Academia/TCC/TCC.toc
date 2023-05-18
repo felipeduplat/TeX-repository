@@ -2,10 +2,10 @@
 \babel@toc {brazil}{}\relax 
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \addvspace {-12\p@ }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
@@ -13,36 +13,39 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\bfseries \MakeTextUppercase {Introdução}}{16}{chapter.1}%
-\addvspace {-3\p@ }
-\contentsline {section}{\numberline {1.1}Teste}{16}{section.1.1}%
+\contentsline {chapter}{\chapternumberline {1}\bfseries \MakeTextUppercase {Introdução}}{15}{chapter.1}%
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\bfseries \MakeTextUppercase {Revisão de literatura}}{17}{chapter.2}%
+\contentsline {chapter}{\chapternumberline {2}\bfseries \MakeTextUppercase {Revisão de literatura}}{16}{chapter.2}%
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {Metodologia e dados}}{18}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\bfseries \MakeTextUppercase {Metodologia e dados}}{17}{chapter.3}%
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {Resultados}}{19}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\bfseries \MakeTextUppercase {Resultados}}{18}{chapter.4}%
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {Considerações finais}}{20}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\bfseries \MakeTextUppercase {Considerações finais}}{19}{chapter.5}%
 \vspace {\cftbeforechapterskip }
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{{REFER\^ENCIAS}}{21}{section*.20}%
-\vspace {4pt}
+\contentsline {chapter}{Referências}{20}{section*.19}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Ap\^endices}}{21}{section*.20}%
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {1}\bfseries \MakeTextUppercase {Apêndice 01}}{22}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {1}\bfseries \MakeTextUppercase {Título}}{22}{appendix.A}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Anexos}}{23}{section*.21}%
 \addvspace {-12\p@ }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {1}\bfseries \MakeTextUppercase {Anexo 01}}{23}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {1}\bfseries \MakeTextUppercase {Título}}{24}{appendix.anexochapback.1}%

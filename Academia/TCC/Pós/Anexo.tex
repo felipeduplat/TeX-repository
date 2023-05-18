@@ -3,10 +3,13 @@
 % ANEXO
 %---------------------------------------------------------------------
 
-
-\chapter{Anexo 01}
-\label{an:an01}
-
-\lipsum[1-2]
+\begin{anexosenv}
+	\renewcommand{\thechapter}{\arabic{chapter}}
+	\partanexos
+	\chapter{Título} \label{an:an01}
+	
+	Texto.
+	
+\end{anexosenv}
 
 

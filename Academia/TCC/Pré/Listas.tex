@@ -11,7 +11,7 @@
 
 
 % Lista de quadros:
-\pdfbookmark[0]{\listtablename}{lot}
+\pdfbookmark[0]{Lista de quadros}{loq}
 \listofquadros*
 \cleardoublepage
 
@@ -29,23 +29,40 @@
 	
 	\item[ECV] Esporte Clube Vitória.
 	
-	\item[]     
+	\item[ ]  
 	
 \end{siglas}
 
 
 % Símbolos:
-\begin{simbolos}
-	\item[$\alpha$] Letra grega Alfa em minúsculo.
-	\item[$\beta$]  Letra grega Beta em minúsculo.
-	\item[$\gamma$] Letra grega gama em minúsculo.
-\end{simbolos}
+%\begin{simbolos}
+%	\item[$\alpha$] Letra grega Alfa em minúsculo.
+%	\item[$\beta$]  Letra grega Beta em minúsculo.
+%	\item[$\gamma$] Letra grega gama em minúsculo.
+%\end{simbolos}
 
 
 
 % Sumário:
-%\pdfbookmark[0]{\contentsname}{toc}
+
+% tamanho de fonte para sumário:
+\newcommand{\tocfont}{\normalsize}
+
+% Modifica o espaçamento:
+\setlength{\cftbeforechapterskip}{18pt}
+\setlength{\cftbeforesectionskip}{5pt}
+\setlength{\cftbeforesubsectionskip}{0pt}
+\setlength{\cftbeforesubsubsectionskip}{0pt}
+\setlength{\cftbeforeparagraphskip}{0pt}
+
+%% Altera a indentação:
+%\cftsetindents{chapter}{0pt}{42pt}
+%\cftsetindents{section}{0pt}{42pt}
+%\cftsetindents{subsection}{0pt}{42pt}
+%\cftsetindents{subsubsection}{0pt}{42pt}
+
+% Gerar sumário:
+\pdfbookmark[0]{\contentsname}{toc}
 \phantompart \tableofcontents*
-%\cleardoublepage
 
 

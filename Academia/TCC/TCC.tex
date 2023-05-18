@@ -26,7 +26,6 @@ oneside,         % para impressão em páginas separadas (somente anverso).
 a4paper,         % tipo do papel.
 chapter=TITLE,   % títulos de capítulos convertidos em letras maiúsculas.
 section=TITLE,   % títulos de seções convertidos em letras maiúsculas.
-subsection=Title % títulos de subseções convertidos em letras maiúsculas.
 english,         % ENG para hifenização.
 spanish,         % ESP para hifenização.
 brazil,          % PT-BR para hifenização - o último idioma é o principal do documento
@@ -51,13 +50,15 @@ dvipsnames       % cores adicionais.
 \begin{document}
 
 % Uppercase dos títulos:
-\renewcommand{\bibname}{{REFER\^ENCIAS}}
-\renewcommand{\tablename}{TABELA }
-\renewcommand{\figurename}{FIGURA }
+\renewcommand{\tablename}{TABELA}
+\renewcommand{\figurename}{FIGURA}
 \renewcommand{\figureautorefname}{FIGURA}
 \renewcommand{\tableautorefname}{TABELA}
 \newcommand{\equationname}{EQUA\c{C}\~AO~}
 \renewcommand{\equationautorefname}{EQUA\c{C}\~AO~}
+\renewcommand{\bibname}{{REFER\^ENCIAS}}
+\renewcommand{\apendicesname}{Ap\^endices}
+\renewcommand{\anexosname}{Anexos}
 
 % Fonte do número da primeira página do capítulo:
 \aliaspagestyle{chapter}{chapfirst}
@@ -69,17 +70,17 @@ dvipsnames       % cores adicionais.
 % ----------------------------------------------------------
 \pretextual
 
-\include{Pré/Capa}                            % Capa.
-\include{Pré/Folha_de_rosto}                  % Folha de rosto.
+\include{Pré/Capa}                             % Capa.
+\include{Pré/Folha_de_rosto}                   % Folha de rosto.
 \include{Pré/Ficha_catalográfica}             % Ficha catalográfica.
 \include{Pré/Errata}                          % Errata.
 \include{Pré/Termo_de_aprovação}              % Termo de aprovação.
 \include{Pré/Dedicatória}                     % Dedicatória.
 \include{Pré/Agradecimentos}                  % Agradecimentos.
 \include{Pré/Epígrafe}                        % Epígrafe.
-\include{Pré/Resumo}                          % Resumo.
-\include{Pré/Abstract}                        % Abstract.
-\include{Pré/Listas}                          % Listas de figuras, quadros, tabelas e sumário.
+\include{Pré/Resumo}                           % Resumo.
+\include{Pré/Abstract}                         % Abstract.
+\include{Pré/Listas}                           % Listas de figuras, quadros, tabelas e sumário.
 
 
 
@@ -103,24 +104,17 @@ dvipsnames       % cores adicionais.
 
 % Referências:
 \begingroup
-\printbibliography[heading=bibintoc,notkeyword= {consulta}, notkeyword={npub-informal}]
-\printbibliography [keyword= consulta, title = FONTES DE CONSULTA]
+\printbibliography[title = Referências, heading = bibintoc, notkeyword = {consulta}, notkeyword={npub-informal}]
 \endgroup
 
 % Capítulos pós-textuais:
-\addtocontents{toc}{\vspace{4pt}}
+%\addtocontents{toc}{\vspace{4pt}}
 
 % Apêndice:
-\begin{apendicesenv}
-	\renewcommand{\thechapter}{\arabic{chapter}}
-	\input{Pós/Apêndice}
-\end{apendicesenv}
+\include{Pós/Apêndice}
 
 % Anexo:
-\begin{anexosenv}
-	\renewcommand{\thechapter}{\arabic{chapter}}
-	\input{Pós/Anexo}
-\end{anexosenv}
+\include{Pós/Anexo}
 
 \end{document}
 

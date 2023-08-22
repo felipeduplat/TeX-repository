@@ -30,6 +30,14 @@ Template genérico, em duas colunas, para elaborar artigos acadêmicos.
   <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/002.png?raw=true">
 </p>
 
+### :bookmark_tabs: Currículo:
+
+Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**. Disponível em pt-br e em inglês.
+
+<p align="center">
+  <img width="300" height="450" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/009.png?raw=true">
+</p>
+
 ### :notebook: Lista de exercício:
 
 Feito para realização de listas de exercício da Universidade.
@@ -62,28 +70,20 @@ Feito para apresentação de artigos e trabalhos acadêmicos.
   <img width="450" height="250" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/006.png?raw=true">
 </p>
 
-#### :closed_book: TCC:
-
-Baseado no modelo [padrão da UFPR](https://github.com/eekBR/ufpr-abntex2), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado.
-
-<p align="center">
-  <img width="300" height="400" src="https://github.com/felipeduplat/private/blob/main/009.png">
-</p>
-
-### :bookmark_tabs: Currículo:
-
-Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**. Disponível em pt-br e em inglês.
-
-<p align="center">
-  <img width="300" height="450" src="https://github.com/felipeduplat/private/blob/main/010.png">
-</p>
-
 ### :film_projector: Slide institucional:
 
 Feito para apresentações voltadas ao mercado de trabalho.
 
 <p align="center">
-  <img width="450" height="250" src="https://github.com/felipeduplat/private/blob/main/008.png">
+  <img width="450" height="250" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/007.png?raw=true">
+</p>
+
+#### :closed_book: TCC:
+
+Baseado no modelo [padrão da UFPR](https://github.com/eekBR/ufpr-abntex2), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado.
+
+<p align="center">
+  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/008.png?raw=true">
 </p>
 
 

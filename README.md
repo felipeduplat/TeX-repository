@@ -5,7 +5,7 @@
 
 
 <!-- Título -->
-# TeX-Repository
+# TeX-repository
 
 **Um repositório contendo meus templates feitos no LaTeX.**
 

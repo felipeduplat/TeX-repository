@@ -30,6 +30,15 @@ Template genérico, em duas colunas, para elaborar artigos acadêmicos.
   <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/002.png?raw=true">
 </p>
 
+### :bookmark_tabs: Carta de apresentação:
+
+Baseado no modelo [Awesome CV](https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/hzvvsbxccjhz), fiz uma carta de apresentação colorida para juntar com o Currículo. Disponível em pt-br e em inglês.
+
+<p align="center">
+  <img width="300" height="450" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/010.png?raw=true">
+</p>
+
+
 ### :bookmark_tabs: Currículo:
 
 Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**. Disponível em pt-br e em inglês.
@@ -94,7 +103,7 @@ Baseado no modelo [padrão da UFPR](https://github.com/eekBR/ufpr-abntex2), fiz 
 - [X] :mortar_board: ~~artigo~~
 - [X] :mortar_board: ~~projeto de dissertação~~
 - [X] :briefcase:    ~~slide institucional~~
-- [ ] :briefcase:    carta de apresentação
+- [X] :briefcase:    ~~carta de apresentação~~
 - [ ] :mortar_board: pôster
 
 

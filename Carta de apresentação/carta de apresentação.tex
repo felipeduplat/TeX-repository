@@ -1,0 +1,137 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% MODELO DE CARTA DE APRESENTAÇÃO - FELIPE DUPLAT LUZ %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+% CONFIGURAÇÕES
+%-------------------------------------------------------------------------------
+
+% Classe:
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Pacotes:
+\usepackage[brazil]{babel} % colocar em PT-BR
+\usepackage{academicons}   % ícone do Lattes e Orcid
+\usepackage{lipsum}        % dummy text
+
+% Margens:
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Cores da página:
+% (awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight)
+\colorlet{awesome}{awesome-skyblue}
+%\definecolor{awesome}{HTML}{CA63A8}
+
+% Cores do texto:
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{333333}
+%\definecolor{graytext}{HTML}{5D5D5D}
+%\definecolor{lighttext}{HTML}{999999}
+
+% Falso caso não queira o início de cada seção colorido:
+\setbool{acvSectionColorHighlight}{true}
+
+% Caso queira alterar a divisória dos ícones:
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+
+%-------------------------------------------------------------------------------
+%	INFORMAÇÕES PESSOAIS
+%-------------------------------------------------------------------------------
+
+% Cabeçalho:
+\photo[circle,noedge,left]{Imagens/001} % ou circle|rectangle, edge/noedge, left/right
+\name{Felipe Duplat}{Luz}
+\position{Assistente de pesquisa {\enskip\cdotp\enskip} Mestrando em Desenvolvimento Econômico}
+\address{Salvador/BA - Brasil}
+
+% Ícones:
+\mobile{+55 (71) 99729-1441}
+\email{duplat.f@gmail.com}
+\lattes{Lattes}
+\orcid{Orcid}
+\github{GitHub}
+\linkedin{Linkedin}
+
+
+
+%-------------------------------------------------------------------------------
+%	INFORMAÇÕES
+%-------------------------------------------------------------------------------
+
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+
+  % The date on the letter, default is the date of compilation
+\letterdate{\today}
+
+% The title of the letter
+\lettertitle{Aplicação para a vaga de}
+% How the letter is opened
+
+\letteropening{Dear Mr./Ms./Dr. LastName,}
+
+% How the letter is closed
+\letterclosing{Atenciosamente,}
+
+% Any enclosures with the letter
+\letterenclosure[Em anexo:]{curriculum vitae}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% DOCUMENTO COMEÇA A PARTIR DAQUI:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Gerar cabeçalho:
+\makecvheader[R]
+
+% Gerar rodapé:
+ \makecvfooter
+  {\today}
+  {Felipe Duplat Luz ~~~·~~~ Carta de apresentação}
+  {}
+
+% Gerar título:
+\makelettertitle
+
+
+
+%-------------------------------------------------------------------------------
+%	TEXTO
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Seção 01}
+\lipsum[1]
+
+
+\lettersection{Seção 02}
+\lipsum[1]
+
+
+\lettersection{Seção 03}
+\lipsum[1]
+
+
+\end{cvletter}
+
+
+% Gerar fechamento do texto:
+\makeletterclosing
+
+\end{document}
+
+

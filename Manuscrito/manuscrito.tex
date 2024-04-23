@@ -1,0 +1,225 @@
+
+%%%%%% MANUSCRITO %%%%%%
+
+% Classe:
+\documentclass[a4paper, 1pt]{article}
+
+% Pacotes utilizados:
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{hyperref}
+\usepackage{orcidlink}
+\usepackage[title]{appendix}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{booktabs}                                      % \toprule, \midrule, \botrule;
+\usepackage{caption}                                       % \caption;
+\usepackage{threeparttable}                                % inserir rodapé nas tabelas;
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{chngcntr}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage[T1]{fontenc}                                   % font encoding;
+\usepackage{csquotes}                                      % csquotes;
+\usepackage{diagbox}
+\usepackage[style = apa,
+            backend = biber]{biblatex}                     % adicionar referências (estilo APA);
+%\usepackage[natbibapa]{apacite}                           % citações estilo APA;
+%\usepackage[brazilian]{babel}                             % setar idioma.
+
+% Margens:  
+\usepackage[
+  top=2cm,
+  bottom=2cm,
+  left=2.5cm,
+  right=2.5cm,
+  marginparwidth=1.75cm]{geometry}
+
+% Referências:
+\addbibresource{referencias.bib}
+
+% Formatar DOI no estilo APA-7:
+%\renewcommand{\doiprefix}{https://doi.org/}
+
+% Requerimentos adicionais da sétima edição da APA:
+\DeclareLanguageMapping{british}{british-apa}     % language mapping;
+\DeclareFieldFormat[article]{volume}{\apanum{#1}} % format volume number.
+
+% Mudar 'and' para '&' nas referências:
+\renewcommand*{\finalnamedelim}{
+  \ifnumgreater{\value{liststop}}{2}{\finalandcomma}{}
+  \addspace\&\space}
+
+
+%% Configurações:
+
+% Espaçamento das linhas:
+\usepackage{setspace}
+\onehalfspacing
+
+% Redefinir formato da numeração da seção e subseção:
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection.}{1em}{}
+  
+% Customizar numeração das linhas:
+\usepackage{lineno}
+\renewcommand\linenumberfont{\normalfont\scriptsize\sffamily\color{blue}}
+\rightlinenumbers
+%\linenumbers                      % inserir numeração das linhas.
+
+% Define um novo comando para fourth-level title.
+\newcommand{\subsubsubsection}[1]{
+  \vspace{\baselineskip}
+  \noindent\textbf{#1\\}\quad
+}
+
+% Alterar a posição da legenda da tabela acima da tabela:
+\usepackage{float}
+\usepackage{caption}
+\captionsetup[table]{position=top}
+
+% Definir lista não numerada:
+\makeatletter
+\newenvironment{unlist}{
+  \begin{list}{}{
+    \setlength{\labelwidth}{0pt}
+    \setlength{\labelsep}{0pt}
+    \setlength{\leftmargin}{2em}
+    \setlength{\itemindent}{-2em}
+    \setlength{\topsep}{\medskipamount}
+    \setlength{\itemsep}{3pt}
+  }
+}{
+  \end{list}
+}
+\makeatother
+
+% Apêndice:
+\renewcommand\theequation{\Alph{section}\arabic{equation}} % Redefine equation numbering format
+\counterwithin*{equation}{section}                         % Number equations within sections
+\renewcommand\thefigure{\Alph{section}\arabic{figure}}     % Redefine equation numbering format
+\counterwithin*{figure}{section}                           % Number equations within sections
+\renewcommand\thetable{\Alph{section}\arabic{table}}       % Redefine equation numbering format
+\counterwithin*{table}{section}                            % Number equations within sections
+
+
+
+%-------------------------------------------
+% CABEÇALHO
+%-------------------------------------------
+
+% Título do artigo:
+\title{Article title}
+
+% Autores:
+\author[1]{Felipe Duplat Luz}
+\author[2]{Vinicius de Almeida Vale}
+\author[2]{Kênia Barreiro de Souza}
+%\author[3]{Fourth Author}
+%\author[1,*]{Fifth Author}
+
+% Afiliação:
+\affil[1]{\small Center for Studies in Urban and Regional Development (NEDUR-UFPR), Brazil}
+\affil[2]{Federal University of Paraná, Brazil}
+%\affil[3]{Department, Organization, Street, City, 610101, State, Country}
+\affil[*]{Corresponding author: \texttt{duplat.f@gmail.com}}
+
+% Data (vazio para remover):
+\date{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% TEXTO COMEÇA A PARTIR DAQUI:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+\lipsum[1]
+
+\end{abstract}
+
+\textbf{Keywords}: International trade. Wage inequality. Poverty. Computable General Equilibrium. Behavioral microsimulation.
+
+
+
+% Introdução:
+\section{Section 01} \label{sec:01}
+
+\lipsum[1]
+
+
+
+% Revisão de literatura:
+\section{Section 02} \label{sec:02}
+
+\lipsum[1]
+
+
+
+% Metodologia:
+\section{Section 03} \label{sec:03}
+
+\lipsum[1]
+
+
+
+% Resultados:
+\section{Section 04} \label{sec:04}
+
+\lipsum[1]
+
+
+
+% Considerações finais:
+\section{Section 05} \label{sec:05}
+
+\lipsum[1]
+
+
+
+% Referências:
+\printbibliography
+
+
+
+% Apêndice:
+
+\section*{Appendix}
+
+\begin{appendices}
+
+% Descrição das variáveis:
+\section{Variable description} \label{ap:a}
+
+\lipsum[1]
+
+
+
+% Tabela de dados:
+\section{Database} \label{ap:b}
+
+\lipsum[1]
+
+
+
+\end{appendices}
+
+\end{document}
+
+

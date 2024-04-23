@@ -55,7 +55,7 @@ Feito para realização de listas de exercício da Universidade.
   <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/005.png?raw=true">
 </p>
 
-### :notebook: Manuscrito:
+### :book: Manuscrito:
 
 Feito para fazer os rascunhos de artigos.
 
@@ -112,7 +112,7 @@ Baseado no modelo [padrão da UFPR](https://github.com/eekBR/ufpr-abntex2), fiz 
 - [X] :mortar_board: ~~projeto de dissertação~~
 - [X] :briefcase:    ~~slide institucional~~
 - [X] :briefcase:    ~~carta de apresentação~~
-- [X] :paper:        ~~Manuscrito~~
+- [X] :book:         ~~Manuscrito~~
 - [ ] :mortar_board: pôster
 
 

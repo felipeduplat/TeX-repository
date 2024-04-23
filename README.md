@@ -35,7 +35,7 @@ Template genérico, em duas colunas, para elaborar artigos acadêmicos.
 Baseado no modelo [Awesome CV](https://www.overleaf.com/latex/templates/awesome-cv-cover-letter/hzvvsbxccjhz), fiz uma carta de apresentação colorida para juntar com o Currículo. Disponível em pt-br e em inglês.
 
 <p align="center">
-  <img width="300" height="450" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/010.png?raw=true">
+  <img width="300" height="450" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/003.png?raw=true">
 </p>
 
 
@@ -44,7 +44,7 @@ Baseado no modelo [Awesome CV](https://www.overleaf.com/latex/templates/awesome-
 Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**. Disponível em pt-br e em inglês.
 
 <p align="center">
-  <img width="300" height="450" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/009.png?raw=true">
+  <img width="300" height="450" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/004.png?raw=true">
 </p>
 
 ### :notebook: Lista de exercício:
@@ -52,7 +52,7 @@ Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-templa
 Feito para realização de listas de exercício da Universidade.
 
 <p align="center">
-  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/003.png?raw=true">
+  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/005.png?raw=true">
 </p>
 
 ### :notebook: Manuscrito:
@@ -60,7 +60,7 @@ Feito para realização de listas de exercício da Universidade.
 Feito para fazer os rascunhos de artigos.
 
 <p align="center">
-  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/004.png?raw=true">
+  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/006.png?raw=true">
 </p>
 
 ### :notebook_with_decorative_cover: Projeto de dissertação:
@@ -68,7 +68,7 @@ Feito para fazer os rascunhos de artigos.
 Adaptei o modelo em .docx do PPGDE-UFPR para o LaTeX com mínimas alterações estéticas. Serve para elaborar os projetos de dissertação (e tese).
 
 <p align="center">
-  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/005.png?raw=true">
+  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/007.png?raw=true">
 </p>
 
 ### :notebook: Resumo:
@@ -76,7 +76,7 @@ Adaptei o modelo em .docx do PPGDE-UFPR para o LaTeX com mínimas alterações e
 Feito para realização de atividades mais simples da Universidade, como: resumos, ensaios, etc.
 
 <p align="center">
-  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/006.png?raw=true">
+  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/008.png?raw=true">
 </p>
 
 ### :film_projector: Slide acadêmico:
@@ -84,7 +84,7 @@ Feito para realização de atividades mais simples da Universidade, como: resumo
 Feito para apresentação de artigos e trabalhos acadêmicos.
 
 <p align="center">
-  <img width="450" height="250" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/007.png?raw=true">
+  <img width="450" height="250" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/009.png?raw=true">
 </p>
 
 ### :film_projector: Slide institucional:
@@ -92,7 +92,7 @@ Feito para apresentação de artigos e trabalhos acadêmicos.
 Feito para apresentações voltadas ao mercado de trabalho.
 
 <p align="center">
-  <img width="450" height="250" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/008.png?raw=true">
+  <img width="450" height="250" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/010.png?raw=true">
 </p>
 
 #### :closed_book: TCC:
@@ -100,7 +100,7 @@ Feito para apresentações voltadas ao mercado de trabalho.
 Baseado no modelo [padrão da UFPR](https://github.com/eekBR/ufpr-abntex2), fiz um template para os Trabalhos de Conclusão de Curso da graduação, mestrado e doutorado.
 
 <p align="center">
-  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/009.png?raw=true">
+  <img width="300" height="400" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/011.png?raw=true">
 </p>
 
 

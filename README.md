@@ -112,7 +112,7 @@ Baseado no modelo [padrão da UFPR](https://github.com/eekBR/ufpr-abntex2), fiz 
 - [X] :mortar_board: ~~projeto de dissertação~~
 - [X] :briefcase:    ~~slide institucional~~
 - [X] :briefcase:    ~~carta de apresentação~~
-- [X] :book:         ~~Manuscrito~~
+- [X] :mortar_board: ~~Manuscrito~~
 - [ ] :mortar_board: pôster
 
 

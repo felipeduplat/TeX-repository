@@ -6,8 +6,8 @@
 % São duas opções possíveis: usar um PDF pronto ou usar o comando abaixo. Se quiser usar o PDF, basta substituir o arquivo .pdf na pasta "Pré". Caso queira usar o comando, basta editá-lo de acordo com suas necessidades e depois remover o .pdf da pasta "Pré".
 
 \newcommand{\insereAprovacao}{
-	\IfFileExists{Pré/Termo de aprovação.pdf}
-	{\includepdf[pages=-]{Pré/Termo de aprovação.pdf}}
+	\IfFileExists{Pré/Termo_de_aprovação.pdf}
+	{\includepdf[pages=-]{Pré/Termo_de_aprovação.pdf}}
 	{
 		\begin{folhadeaprovacao}%\color{blue}
 			
@@ -39,12 +39,12 @@
 					{\imprimirorientadora \\ Orientadora}
 					{\imprimirorientador \\ Orientador}}
 			}
-			\assinatura{
-				{Kênia Barreiro de Souza} \\ Co-orientadora}
+			%\assinatura{
+			%	{Kênia Barreiro de Souza} \\ Co-orientadora}
 			\assinatura{%\textbf
-				{Professor(a)} \\ Universidade XXX}
+				{Pessoa 01} \\ Avaliador interno (Universidade X)}
 			\assinatura{%\textbf
-				{Professor(a)} \\ Universidade XXX}
+				{Pessoa 02} \\ Avaliador externo (Universidade Y)}
 			%\assinatura{%\textbf{Professor} \\ Convidado 4}
 			
 			\begin{center}

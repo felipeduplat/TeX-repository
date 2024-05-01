@@ -23,13 +23,27 @@
 \usepackage{float} 		             % para a figura ficar na posição correta.	    
 \usepackage{textcomp} 		         % suporte para fontes da Text Companion. 
 \usepackage{longtable}		         % uso de longtable.
-\usepackage{amsmath}		         % símbolos matematicos.
-\usepackage{lscape}		             % páginas em paisagem.
+\usepackage{amsmath}		         % símbolos matemáticos.
+\usepackage{pdflscape}		         % páginas em paisagem.
 \usepackage{multicol}		         % mescla de colunas em tabelas.
 \usepackage{multirow}		         % mescla de linhas em tabelas.
 \usepackage{newfloat} 		         % criação do indice de quadros.
 \usepackage{slashbox}                % para tabelas.
 \usepackage{makecell}                % para tabelas.
+\usepackage{threeparttable}          % para tabelas.
+\usepackage{nameref}                 % para labels dos capítulos.
+\usepackage{changepage}              % alterar margem das tabelas.
+\usepackage{caption}                 % alterar título das tabelas.
+\usepackage{longtable}               % permitir que a tabela atravesse várias páginas.
+\usepackage{makecell}                % quebrar linha dentro das células de uma tabela.
+\usepackage[cal=esstix]{mathalfa}    % fontes matemáticas.
+\usepackage{bbm}                     % símbolos matemáticos.
+\usepackage{dcolumn}                 % para tabelas das regressões.
+\usepackage{fancyhdr}				 % tirar cabeçalho.
+\usepackage{titlesec}                % ajustar seções.
+
+% para equações matemáticas:
+\DeclareMathOperator\Log{Log}
 
 % Para legendas:
 %\usepackage{caption}
@@ -42,6 +56,9 @@
 \captiondelim{-- }
 \captiontitlefont{\small}
 \captionnamefont{\small}
+
+% não resetar notas de rodapé:
+\counterwithout{footnote}{chapter}
 
 
 
@@ -88,6 +105,9 @@ uniquelist=false]{biblatex}
 \makeatletter
 	\pretocmd{\chapter}{\addtocontents{toc}{\protect\addvspace{-12\p@}}}{}{}
 	\pretocmd{\section}{\addtocontents{toc}{\protect\addvspace{-3\p@}}}{}{}
+	\pretocmd{\chapter}{\addtocontents{lof}{\protect\vspace{-10\p@}}}{}{}
+	\pretocmd{\chapter}{\addtocontents{loq}{\protect\vspace{-10\p@}}}{}{}
+	\pretocmd{\chapter}{\addtocontents{lot}{\protect\vspace{-8\p@}}}{}{}
 \makeatother
 
 
@@ -104,7 +124,7 @@ uniquelist=false]{biblatex}
 	{%
 		\oldcontentsline{#1}{\MakeTextUppercase{#2}}%
 	}{%
-		\oldcontentsline{#1}{\MakeTextUppercase{#2}}%
+		\oldcontentsline{#1}{{#2}}%
 	}%
 }
 \makeatother
@@ -145,7 +165,7 @@ uniquelist=false]{biblatex}
 \makeoddfoot{simplestextual}
   {}{}{}
 
-% Formatação dos capítulos póstextuais numerados:
+% Formatação dos capítulos pós-textuais numerados:
 %\newcommand{\refap}[1]{\hyperref[#1]{Apêndice~\ref{#1}}} 	% Referência apÊndices
 
 % uso do tikz e pgfplots:
@@ -177,5 +197,8 @@ uniquelist=false]{biblatex}
 
 \newcommand{\textcitenp}[1]{
 	\textcite{#1}\footnote{\fullcite{#1}}}
+
+% Tirar negrito do \citetitle:
+\DeclareFieldFormat{citetitle}{#1}
 
 

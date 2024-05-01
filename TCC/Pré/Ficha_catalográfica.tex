@@ -8,8 +8,8 @@
 \newcommand{\PalavraschaveTexto}{Palavra 01. Palavra 02. Palavra 03.}
 
 \newcommand{\insereFichaCatalografica}{ 
-		\IfFileExists{Pré/Ficha catalográfica.pdf}
-		{\includepdf[pages=-]{Pré/Ficha catalográfica.pdf}}
+		\IfFileExists{Pré/Ficha_catalográfica.pdf}
+		{\includepdf[pages=-]{Pré/Ficha_catalográfica.pdf}}
 		{
 			\begin{fichacatalografica}%\color{blue}
 			\vspace*{\fill}					% Posição vertical
@@ -17,7 +17,7 @@
 			\begin{center}					% Minipage Centralizado
 				\begin{minipage}[c]{12.5cm}		% Largura
 					
-					Luz, Felipe Duplat
+					\imprimirautor
 					
 					\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
 					\imprimirlocal, \imprimirdata.

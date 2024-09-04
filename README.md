@@ -15,7 +15,7 @@
 
 Um repositório com o objetivo de compartilhar os _templates_ que elaborei no LaTeX para as atividades do PPGDE-UFPR e também para processos seletivos - seja dentro ou fora da Academia.
 
-Uso o [MiKTeX](https://miktex.org/), [TeXstudio](https://www.texstudio.org/) e [VSCode](https://code.visualstudio.com/) para criar e editar os arquivos .tex que posto neste repositório.
+Uso o [MiKTeX](https://miktex.org/), [TeXstudio](https://www.texstudio.org/) e [Sublime Text 4](https://www.sublimetext.com/) para criar e editar os arquivos .tex que posto neste repositório.
 
 
 

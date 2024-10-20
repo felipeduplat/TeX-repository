@@ -39,13 +39,6 @@ Baseado no modelo [Awesome CV](https://www.overleaf.com/latex/templates/awesome-
 </p>
 
 
-### :bookmark_tabs: Currículo:
-
-Baseado no modelo [AltaCV](https://pt.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv), fiz um currículo colorido que concentre todas as informações essenciais em **uma só página**. Disponível em pt-br e em inglês.
-
-<p align="center">
-  <img width="300" height="450" src="https://github.com/felipeduplat/TeX-Repository/blob/main/img/004.png?raw=true">
-</p>
 
 ### :notebook: Lista de exercício:
 

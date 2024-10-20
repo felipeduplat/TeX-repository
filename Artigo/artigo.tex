@@ -1,17 +1,16 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% UNIVERSIDADE FEDERAL DO PARANÁ (UFPR)
-% PÓS-GRADUAÇÃO EM DESENVOLVIMENTO ECONÔMICO (PPGDE)
-% FACULDADE DE ECONOMIA
-% DISCENTE: FELIPE DUPLAT LUZ
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%% ARTIGO - PPGDE UFPR %%%%%%
+%%% MODELO DE ARTIGO - FELIPE DUPLAT LUZ %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+% CONFIGURAÇÕES
+%-------------------------------------------------------------------------------
 
 % Classe:
 \documentclass[a4paper, 11pt]{article}
-
 
 % Pacotes utilizados:
 \usepackage[brazil]{babel}         % manter em PT-BR.
@@ -42,7 +41,7 @@ footskip=.25in]{geometry}
 \setlength{\textwidth}{18cm} 
 \setlength{\oddsidemargin}{-0.7cm}
 
-% hyperlink:
+% Hyperlink:
 \hypersetup{
 	colorlinks=true,
 	linkcolor=blue,
@@ -58,7 +57,7 @@ footskip=.25in]{geometry}
 % Referências:
 \addbibresource{referencias.bib}
 
-% Traduzir para pt-br:
+% Traduzir autores para pt-br:
 \renewcommand*{\Authands}{ e }
 
 % Substituir símbolo do \thanks:
@@ -68,6 +67,12 @@ footskip=.25in]{geometry}
 		\or \ddagger\ddagger \else\@ctrerr\fi}}
 \makeatother
 
+
+
+%-------------------------------------------------------------------------------
+%	INFORMAÇÕES PESSOAIS
+%-------------------------------------------------------------------------------
+
 % Cabeçalho:
 \title{\textsc{Título do artigo}}
 \author[$\Psi$]{Felipe Duplat\thanks{E-mail: \href{mailto:duplat.f@gmail.com}{duplat.f@gmail.com}}}
@@ -75,9 +80,6 @@ footskip=.25in]{geometry}
 \author[$\Psi$]{Kênia Souza}
 \affil[$\Psi$]{\footnotesize Universidade Federal do Paraná, Brasil}
 \date{\today}
-
-% Identação:
-
 
 % Inserir todas as referências:
 \nocite{sotomayor21, dolevchenko09}
@@ -87,7 +89,7 @@ footskip=.25in]{geometry}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-% TEXTO COMEÇA A PARTIR DAQUI:
+% DOCUMENTO COMEÇA A PARTIR DAQUI:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -95,15 +97,15 @@ footskip=.25in]{geometry}
 \begin{document}
 \maketitle
 
-% Seção 00: resumo
+%%% SEÇÃO 01: RESUMO %%%
 \begin{tikzpicture}
 	\draw[thick] (-6.5,0)--(10,0);
 \end{tikzpicture}
 
 \begin{abstract}
 	\lipsum[1] \\
-	\textbf{Palavras-chave}: [texto] \\
-	\textbf{Classificação JEL}: [texto]
+	\textbf{Palavras-chave}: texto. texto. texto. \\
+	\textbf{Classificação JEL}: texto. texto. texto.
 \end{abstract}
 
 \begin{tikzpicture}
@@ -114,44 +116,44 @@ footskip=.25in]{geometry}
 
 
 
-% Seção 02: introdução
+%%% SEÇÃO 02: INTRODUÇÃO %%%
 \begin{multicols}{2}
 
-\section{\textsc{Introdução}}
+\section{Introdução}
 
 \lettrine[lines=3,loversize=.6,lraise=.1,nindent=.5em]{\fboxsep3pt\fboxrule2pt\fcolorbox{black}{white}{\color{black}L}}{} orem ipsum dolor sit amet, consectetuer adipiscing elit. \lipsum[1-4]
 
 
 
-% Seção 03: revisão de literatura
+%%% SEÇÃO 03: REVISÃO DE LITERATURA %%%
 \section{Revisão de literatura}
 
 \lipsum[1-7]
 
 
 
-% Seção 04: metodologia e dados
+%%% SEÇÃO 04: METODOLOGIA E DADOS %%%
 \section{Metodologia e dados}
 
 \lipsum[1-4]
 
 
 
-% Seção 05: resultados
+%%% SEÇÃO 05: RESULTADOS %%%
 \section{Resultados}
 
 \lipsum[1-5]
 
 
 
-% Seção 06: considerações finais
+%%% SEÇÃO 06: CONSIDERAÇÕES FINAIS %%%
 \section{Considerações finais}
 
 \lipsum[1-6]
 
 
 
-% Referências:
+%%% REFERÊNCIAS %%%
 \printbibliography[title={Referências}]
 
 \end{multicols}

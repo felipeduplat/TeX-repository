@@ -1,32 +1,36 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% MODELO DE CURRÍCULO - FELIPE DUPLAT LUZ %%%
+%%% MODELO DE CURRÍCULO ENG - FELIPE DUPLAT LUZ %%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Classe:
+%-------------------------------------------------------------------------------
+% CONFIGURAÇÕES
+%-------------------------------------------------------------------------------
+
+% Classe:
 \documentclass[10pt,a4paper]{cv}
 
-%% Para símbolos:
+% Para símbolos:
+
 % texdoc.net/pkg/fontawecome
 % http://texdoc.net/pkg/academicons
+% Se compilar com XeLaTeX, deve-se inserir o Academicons.ttf na pasta de fontes do sistema
 
-%% Se compilar com XeLaTeX, deve-se inserir o Academicons.ttf na pasta de fontes do sistema
-
-%% Configurações da página:
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=0.8cm,top=0.5cm,bottom=1cm}
+% Configurações da página:
+\geometry{left=1cm,right=9cm,marginparwidth=7.2cm,marginparsep=0.8cm,top=0.5cm,bottom=1cm}
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% Pacotes utilizados:
+% Pacotes utilizados:
 \usepackage[utf8]{inputenc}  % fontes
 \usepackage[T1]{fontenc}     % fontes
 \usepackage[default]{lato}   % fontes
 \usepackage{academicons}     % habilitar ícones acadêmicos
 \usepackage{hyperref}        % habilitar hyperlink
 
-%% Alterar as cores:
+% Alterar as cores:
 \definecolor{VividPurple}{HTML}{2E64FE}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
@@ -35,7 +39,7 @@
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
-%% Inserir publicações:
+% Inserir publicações:
 \addbibresource{publicacoes.bib}
 
 
@@ -49,29 +53,40 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
+%-------------------------------------------------------------------------------
+% INFORMAÇÕES PESSOAIS
+%-------------------------------------------------------------------------------
+
 \name{Felipe Duplat Luz}
 \tagline{}
 \photo{2.5cm}{Imagens/001.jpg}
 \personalinfo{
   % pode inserir os próprios com \printinfo{symbol}{detail}
-  \phone{+55 (XX) XXXXX-XXXX}
-  \location{Brasilia, DF, Brazil} \\
+  \location{Brasília, DF, Brazil}
   \email{\href{mailto:duplat.f@gmail.com}{duplat.f@gmail.com}}
+  \phone{\href{https://wa.me/5571997291441}{+55 (71) 99729-1441}} \\
   \printinfo{\aiLattes}{\href{http://lattes.cnpq.br/7966980343097478}{Lattes}}
   \orcid{\href{https://orcid.org/0000-0002-5808-1611}{Orcid}}
   \github{\href{https://github.com/felipeduplat}{GitHub}}
   \linkedin{\href{https://www.linkedin.com/in/felipeduplat/}{LinkedIn}}
 }
 
-%% Cabeçalho se estender durante toda a extensão da direita - 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
 \begin{adjustwidth}{}{-7.6cm}
 \makecvheader
 \end{adjustwidth}
 
 
 
-%% EXPERIÊNCIA
+%%% SEÇÃO 01: EXPERIÊNCIA %%%
 \cvsection[Coluna]{Experience}
+
+\cvevent{\small Technical Consultant}{Ministry of Health (MS)}{nov 24 -- ongoing}{Brasília, DF}
+\begin{itemize}
+  \item Support the formulation and implementation of public policies to strengthen the CEIS trade balance.
+\end{itemize}
+
+\divider
 
 \cvevent{\small Research Assistant}{Institute of Applied Economic Research (Ipea)}{may 23 -- ongoing}{Brasília, DF}
 \begin{itemize}
@@ -92,23 +107,20 @@
 \item Analysis and monitoring of socio-productive inclusion projects.
 \end{itemize}
 
-\divider
-
-\cvevent{\small Intern}{Superintendence of Economic and Social Studies of Bahia (SEI)}{july 16-- jan 17}{Salvador, BA}
-\begin{itemize}
-	\item Elaboration of monthly reports on local unemployment and special reports on social groups.
-\end{itemize}
 
 
-
-%% EDUCAÇÃO
+%%% SEÇÃO 02: EDUCAÇÃO %%%
 \cvsection{Education}
 
 \cvevent{\small MSc \ in Development Economics}{Federal University of Paraná (UFPR)}{mar 22 -- feb 24}{Curitiba, PR}
 
+  \faBook \hspace{0.1cm} \href{https://acervodigital.ufpr.br/xmlui/handle/1884/88173}{\small \textit{International trade, income inequality and poverty: an integrated general equilibrium and microsimulation analysis for Brazil.}}
+
 \divider
 
 \cvevent{\small B.A \ in Economics}{Federal University of Bahia (UFBA)}{june 16 -- dec 21}{Salvador, BA}
+
+  \faBook \hspace{0.1cm} \href{https://repositorio.ufba.br/handle/ri/34872}{\textit{\small Effect of the COVID-19 pandemic on poverty and income inequality in Brazil in the year 2020.}}
 
 \divider
 
@@ -116,31 +128,17 @@
 
 
 
-%% PUBLICAÇÔES
+%%% SEÇÃO 03: ATIVIDADES ACADÊMICAS %%%
 \cvsection{Academic activities}
 
 \begin{itemize}
-  \item \textbf{Work presentation} -- Analysis of income inequality between whites and blacks in the state of Bahia, Research, Teaching and Extension Congress, 2019 - UFBA;
-  
+  \item \textbf{Published book chapters} -- \href{http://www.corecon-ba.org.br/wp-content/uploads/2023/08/Reflex%C3%B5es-Economistas-Baianos-2023_FINAL_07.08.2023_vhp-compactado-compactado.pdf}{Effect of the COVID-19 pandemic on poverty and income inequality in Brazil in the year 2020. \textit{Reflexões de Economistas Baianos 2023}}.
+
   \item \textbf{Extension course taught} -- Introduction to \LaTeX{}, 2023 - Federal University of Paraná (UFPR);
   
-  \item \textbf{Published book chapters} -- DUPLAT, F; MENDES, V. Efeito da pandemia de COVID-19 sobre a pobreza e desigualdade de renda no Brasil no ano de 2020. In: PASSOS, H. D.; PESSOTI, G. C. (Org.). Reflexões de Economistas Baianos 2023. 19ª ed. Salvador: CORECON-BA, 2023.
+  \item \textbf{Dissertation presentation} -- XI Forum of Applied Economics in Bahia, 2023 - Faculty of Economics of UFBA.
+  
 \end{itemize}
-
-
-%% ATIVIDADES EXTRACURRICULARES
-%\clearpage
-%\cvsection{Extracurricular activities}
-
-%\cvachievement{\faUniversity}{Athletics of the Economics Course at UFBA}{Vice-president (2019-2020)}
-
-%\divider
-
-%\cvachievement{\faUniversity}{Plinio Moura Academic Directory}{Political Director (2016) and General Director (2017-2019)}
-
-%\divider
-
-%\cvachievement{\faBook}{Public Library of the Bahia State}{Reader for the blind (2014-2016)}
 
 \end{document}
 

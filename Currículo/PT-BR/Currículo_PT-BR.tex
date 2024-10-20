@@ -1,32 +1,36 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% MODELO DE CURRÍCULO - FELIPE DUPLAT LUZ %%%
+%%% MODELO DE CURRÍCULO PT-BR - FELIPE DUPLAT LUZ %%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Classe:
+%-------------------------------------------------------------------------------
+% CONFIGURAÇÕES
+%-------------------------------------------------------------------------------
+
+% Classe:
 \documentclass[10pt,a4paper]{cv}
 
-%% Para símbolos:
+% Para símbolos:
+
 % texdoc.net/pkg/fontawecome
 % http://texdoc.net/pkg/academicons
+% Se compilar com XeLaTeX, deve-se inserir o Academicons.ttf na pasta de fontes do sistema
 
-%% Se compilar com XeLaTeX, deve-se inserir o Academicons.ttf na pasta de fontes do sistema
-
-%% Configurações da página:
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=0.8cm,top=0.5cm,bottom=1cm}
+% Configurações da página:
+\geometry{left=1cm,right=9cm,marginparwidth=7.2cm,marginparsep=0.8cm,top=0.5cm,bottom=1cm}
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% Pacotes utilizados:
-\usepackage[utf8]{inputenc}  % fontes
-\usepackage[T1]{fontenc}     % fontes
-\usepackage[default]{lato}   % fontes
-\usepackage{academicons}     % habilitar ícones acadêmicos
-\usepackage{hyperref}        % habilitar hyperlink
+% Pacotes utilizados:
+\usepackage[utf8]{inputenc}  % fontes.
+\usepackage[T1]{fontenc}     % fontes.
+\usepackage[default]{lato}   % fontes.
+\usepackage{academicons}     % habilitar ícones acadêmicos.
+\usepackage{hyperref}        % habilitar hyperlink.
 
-%% Alterar as cores:
+% Alterar as cores:
 \definecolor{VividPurple}{HTML}{2E64FE}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
@@ -35,7 +39,7 @@
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
-%% Inserir publicações:
+% Inserir publicações:
 \addbibresource{publicacoes.bib}
 
 
@@ -49,29 +53,40 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
+%-------------------------------------------------------------------------------
+% INFORMAÇÕES PESSOAIS
+%-------------------------------------------------------------------------------
+
 \name{Felipe Duplat Luz}
 \tagline{}
 \photo{2.5cm}{Imagens/001.jpg}
 \personalinfo{
   % pode inserir os próprios com \printinfo{symbol}{detail}
-  \phone{+55 (XX) XXXXX-XXXX}
-  \location{Brasília/DF} \\
+  \location{Brasília/DF}
   \email{\href{mailto:duplat.f@gmail.com}{duplat.f@gmail.com}}
+  \phone{\href{https://wa.me/5571997291441}{+55 (71) 99729-1441}} \\
   \printinfo{\aiLattes}{\href{http://lattes.cnpq.br/7966980343097478}{Lattes}}
   \orcid{\href{https://orcid.org/0000-0002-5808-1611}{Orcid}}
   \github{\href{https://github.com/felipeduplat}{GitHub}}
   \linkedin{\href{https://www.linkedin.com/in/felipeduplat/}{LinkedIn}}
 }
 
-%% Cabeçalho se estender durante toda a extensão da direita - 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
 \begin{adjustwidth}{}{-7.6cm}
 \makecvheader
 \end{adjustwidth}
 
 
 
-%% EXPERIÊNCIA
+%%% SEÇÃO 01: EXPERIÊNCIA %%%
 \cvsection[Coluna]{Experiência}
+
+\cvevent{\small Consultor Técnico}{Ministério da Saúde (MS)}{nov 24 -- atual}{Brasília/DF}
+\begin{itemize}
+  \item Subsidiar a formulação e implementação de políticas públicas para o fortalecimento da balança comercial do CEIS.
+\end{itemize}
+
+\divider
 
 \cvevent{\small Assistente de Pesquisa}{Instituto de Pesquisa Econômica Aplicada (Ipea)}{maio 23 -- atual}{Brasília/DF}
 \begin{itemize}
@@ -92,23 +107,20 @@
 \item Análise e acompanhamento de projetos de inclusão socioprodutiva.
 \end{itemize}
 
-\divider
-
-\cvevent{\small Estagiário}{Superintendência De Estudos Econômicos E Sociais da Bahia (SEI)}{jul 16-- jan 17}{Salvador/BA}
-\begin{itemize}
-	\item Elaboração de relatórios mensais sobre desemprego local e especiais sobre grupos focais.
-\end{itemize}
 
 
-
-%% EDUCAÇÃO
+%%% SEÇÃO 02: EDUCAÇÃO %%%
 \cvsection{Educação}
 
 \cvevent{\small Mestrado em Desenvolvimento Econômico}{Universidade Federal do Paraná (UFPR)}{mar 22 -- fev 24}{Curitiba/PR}
 
+  \faBook \hspace{0.1cm} \href{https://acervodigital.ufpr.br/xmlui/handle/1884/88173}{\small \textit{Comércio internacional, desigualdade de renda e pobreza: uma análise integrada de equilíbrio geral e microssimulação para o Brasil.}}
+
 \divider
 
 \cvevent{\small Graduação em Ciências Econômicas}{Universidade Federal da Bahia (UFBA)}{jun 16 -- dez 21}{Salvador/BA}
+
+  \faBook \hspace{0.1cm} \href{https://repositorio.ufba.br/handle/ri/34872}{\textit{\small Efeito da pandemia de COVID-19 sobre a pobreza e desigualdade de renda no Brasil no ano de 2020.}}
 
 \divider
 
@@ -116,32 +128,17 @@
 
 
 
-%% PUBLICAÇÔES
+%%% SEÇÃO 03: ATIVIDADES ACADÊMICAS %%%
 \cvsection{Atividades acadêmicas}
 
 \begin{itemize}
-  \item \textbf{Apresentação de trabalho} -- Análise da desigualdade de renda entre brancos e negros no estado da Bahia, Congresso de Pesquisa, Ensino e Extensão, 2019 - Universidade Federal da Bahia (UFBA);
-  
-  \item \textbf{Curso de extensão ministrado} -- Introdução ao \LaTeX{}, 2023 - Universidade Federal do Paraná (UFPR);
-  
-  \item \textbf{Capítulos de livros publicados} -- DUPLAT, F; MENDES, V. Efeito da pandemia de COVID-19 sobre a pobreza e desigualdade de renda no Brasil no ano de 2020. In: PASSOS, H. D.; PESSOTI, G. C. (Org.). Reflexões de Economistas Baianos 2023. 19ª ed. Salvador: CORECON-BA, 2023.
+  \item \textbf{Capítulos de livros publicados} -- \href{http://www.corecon-ba.org.br/wp-content/uploads/2023/08/Reflex%C3%B5es-Economistas-Baianos-2023_FINAL_07.08.2023_vhp-compactado-compactado.pdf}{Efeito da pandemia de COVID-19 sobre a pobreza e desigualdade de renda no Brasil no ano de 2020. \textit{Reflexões de Economistas Baianos 2023}}.
+
+  \item \textbf{Curso de extensão ministrado} -- Introdução ao \LaTeX{}, 2023 - Universidade Federal do Paraná (UFPR).
+
+  \item \textbf{Apresentação da dissertação} -- XI Fórum Baiano de Economia Aplicada, 2023 - Faculdade de Economia da UFBA.
 \end{itemize}
 
-
-
-%% ATIVIDADES EXTRACURRICULARES
-%\clearpage
-%\cvsection{Atividades extracurriculares}
-
-%\cvachievement{\faUniversity}{Associação Atlética Acadêmica de Economia da UFBA}{Vice-presidente (2019-2020)}
-
-%\divider
-
-%\cvachievement{\faUniversity}{Diretório Acadêmico Plínio Moura}{Diretor Político (2016) e Diretor Geral (2017-2019)}
-
-%\divider
-
-%\cvachievement{\faBook}{Biblioteca Central do Estado da Bahia}{Leitor para cegos (2014-2016)}
 
 \end{document}
 

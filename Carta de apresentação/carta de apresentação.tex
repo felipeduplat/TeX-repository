@@ -45,43 +45,37 @@
 
 % Cabeçalho:
 \photo[circle,noedge,left]{Imagens/001} % ou circle|rectangle, edge/noedge, left/right
-\name{Felipe Duplat}{Luz}
+\name{}{Felipe Duplat Luz}
 \position{Assistente de pesquisa {\enskip\cdotp\enskip} Mestrando em Desenvolvimento Econômico}
-\address{Salvador/BA - Brasil}
+\address{Brasília/DF - Brasil}
 
 % Ícones:
-\mobile{+55 (71) 99729-1441}
+\mobile{+55 (XX) XXXXX-XXXX}
 \email{duplat.f@gmail.com}
 \lattes{Lattes}
 \orcid{Orcid}
 \github{GitHub}
 \linkedin{Linkedin}
 
-
-
-%-------------------------------------------------------------------------------
-%	INFORMAÇÕES
-%-------------------------------------------------------------------------------
-
-% The company being applied to
+% Empresa:
 \recipient
-  {Company Recruitment Team}
-  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+  {Time de recrutadores da empresa}
+  {Empresa Inc. \\ Endereço \\ Cidade - País}
 
-  % The date on the letter, default is the date of compilation
+% Data:
 \letterdate{\today}
 
-% The title of the letter
-\lettertitle{Aplicação para a vaga de}
-% How the letter is opened
+% Título da carta:
+\lettertitle{Aplicação para a vaga de [nome da vaga]}
+ 
+% Abertura da carta:
+\letteropening{Caro Sr./Sra./Dr./Dra. [nome],}
 
-\letteropening{Dear Mr./Ms./Dr. LastName,}
-
-% How the letter is closed
+% Fechamento da carta:
 \letterclosing{Atenciosamente,}
 
-% Any enclosures with the letter
-\letterenclosure[Em anexo:]{curriculum vitae}
+% Assinatura:
+\letterenclosure[Em anexo]{curriculum vitae}
 
 
 
@@ -107,29 +101,31 @@
 % Gerar título:
 \makelettertitle
 
-
-
-%-------------------------------------------------------------------------------
-%	TEXTO
-%-------------------------------------------------------------------------------
 \begin{cvletter}
 
+%%% SEÇÃO 01 %%%
 \lettersection{Seção 01}
-\lipsum[1]
+
+\lipsum[2]
 
 
+
+%%% SEÇÃO 02 %%%
 \lettersection{Seção 02}
-\lipsum[1]
+
+\lipsum[3]
 
 
+
+%%% SEÇÃO 03 %%%
 \lettersection{Seção 03}
+
 \lipsum[1]
 
 
 \end{cvletter}
 
 
-% Gerar fechamento do texto:
 \makeletterclosing
 
 \end{document}

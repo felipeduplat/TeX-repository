@@ -11,7 +11,7 @@
 %% version 2003/12/01 or later.
 %%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{altacv}[2016/11/21 AltaCV v1.1, yet another alternative class for a résumé/curriculum vitae.]
+\ProvidesClass{cv}[2016/11/21 AltaCV v1.1, yet another alternative class for a résumé/curriculum vitae.]
 
 %% v1.1: Optionally load academicons
 \newif\if@academicons

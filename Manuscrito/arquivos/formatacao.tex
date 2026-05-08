@@ -1,0 +1,117 @@
+
+%-------------------------------------------------------------------------------
+% FORMATAÇÃO
+%-------------------------------------------------------------------------------
+
+% Pacotes utilizados:
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{hyperref}
+\usepackage{orcidlink}
+\usepackage[title]{appendix}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{booktabs}                                      % \toprule, \midrule, \botrule;
+\usepackage{caption}                                       % \caption;
+\usepackage{threeparttable}                                % inserir rodapé nas tabelas;
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{indentfirst}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{chngcntr}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{subcaption}
+\usepackage{authblk}
+\usepackage[T1]{fontenc}                                   % font encoding;
+\usepackage{csquotes}                                      % csquotes;
+\usepackage{diagbox}
+\usepackage[
+  style=abnt,
+  backref=true,
+  backend=biber,
+  citecounter=true,
+  backrefstyle=three, 
+  url=true,
+  maxbibnames=99,
+  mincitenames=1,
+  maxcitenames=3,
+  backref=false,
+  hyperref=true,
+  giveninits=true,
+  uniquename=false,
+  uniquelist=false]{biblatex}
+\usepackage[brazilian]{babel}                             % setar idioma.
+
+% Margens:  
+\usepackage[
+  top=2cm,
+  bottom=2cm,
+  left=2.5cm,
+  right=2.5cm,
+  marginparwidth=1.75cm]{geometry}
+
+% Referências:
+\addbibresource{arquivos/referencias.bib}
+
+% Mudar 'and' para '&' nas referências:
+\renewcommand*{\finalnamedelim}{
+  \ifnumgreater{\value{liststop}}{2}{\finalandcomma}{}
+  \addspace\&\space}
+
+
+%% Configurações:
+
+% Espaçamento das linhas:
+\usepackage{setspace}
+\onehalfspacing
+
+% Redefinir formato da numeração da seção e subseção:
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection.}{1em}{}
+  
+% Customizar numeração das linhas:
+\usepackage{lineno}
+\renewcommand\linenumberfont{\normalfont\scriptsize\sffamily\color{blue}}
+\rightlinenumbers
+%\linenumbers                      % inserir numeração das linhas.
+
+% Define um novo comando para fourth-level title.
+\newcommand{\subsubsubsection}[1]{
+  \vspace{\baselineskip}
+  \noindent\textbf{#1\\}\quad
+}
+
+% Alterar a posição da legenda da tabela acima da tabela:
+\usepackage{float}
+\usepackage{caption}
+
+% Definir lista não numerada:
+\makeatletter
+\newenvironment{unlist}{
+  \begin{list}{}{
+    \setlength{\labelwidth}{0pt}
+    \setlength{\labelsep}{0pt}
+    \setlength{\leftmargin}{2em}
+    \setlength{\itemindent}{-2em}
+    \setlength{\topsep}{\medskipamount}
+    \setlength{\itemsep}{3pt}
+  }
+}{
+  \end{list}
+}
+\makeatother
+
+% Apêndice:
+\renewcommand\theequation{\Alph{section}\arabic{equation}} % Redefine equation numbering format
+\counterwithin*{equation}{section}                         % Number equations within sections
+\renewcommand\thefigure{\Alph{section}\arabic{figure}}     % Redefine equation numbering format
+\counterwithin*{figure}{section}                           % Number equations within sections
+\renewcommand\thetable{\Alph{section}\arabic{table}}       % Redefine equation numbering format
+\counterwithin*{table}{section}                            % Number equations within sections
+
+

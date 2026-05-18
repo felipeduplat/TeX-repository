@@ -1,0 +1,139 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%          MODELO DE SLIDE ACADÊMICO - FELIPE DUPLAT LUZ                  %%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+% CONFIGURAÇÕES
+%-------------------------------------------------------------------------------
+
+% Classe:
+\documentclass[aspectratio=169, 9pt]{beamer}
+
+% Pacotes utilizados:
+\usetheme{Boadilla}                      % tema do slide.
+\setbeamertemplate{navigation symbols}{} % remover navigation symbols.1
+\usepackage[style = abnt,                % manter formato ABNT.
+            giveninits,                  % manter primeiros nomes abreviados.
+            scbib                        % manter em versalete.
+           ]{biblatex}                   % adicionar referências.
+\usepackage{tikz}                        % fazer o cabeçalho.
+\usepackage[brazilian]{babel}            % manter em PT-BR.
+\usepackage{fontawesome}                 % habilitar ícones sociais.
+\usepackage{academicons}                 % habilitar ícones acadêmicos.
+
+% Configurações do beamer:
+\setbeamertemplate{section in toc}[sections numbered]  % criar lista de conteúdo.
+\setbeamertemplate{caption}[numbered]                  % numerar as legendas.
+\setbeamerfont{caption}{size=\small}                   % tamanho da fonte das legendas.
+\setbeamerfont{footnote}{size=\small}                  % tamanho da fonte do rodapé.
+\setbeamerfont{footnotemark}{size=\small}              % tamanho da fonte das notas de rodapé.
+\setbeamercovered{transparent}                         % tornar bullet points transparentes.
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=4.5ex,dp=2.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=4.5ex,dp=2.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}
+    \usebeamerfont{title in head/foot}
+    \parbox{.45\paperwidth}{\insertshorttitle\hfill \insertframenumber\,/\,\inserttotalframenumber}
+  \end{beamercolorbox}}
+  \vskip0pt%
+}
+
+% Referências:
+\addbibresource{Referências.bib}
+\setbeamertemplate{bibliography item}{}
+\renewcommand*{\bibfont}{\footnotesize}
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamercolor{bibliography entry note}{fg=black}
+
+
+% Informações pessoais:
+\title[short-title]{Título da apresentação}
+\subtitle[short-subtitle]{Subtítulo de apresentação}
+\author[Felipe Duplat Luz]{ECO0000 - Matéria \\ Prof. XXXX}
+\institute[UnB]
+{
+    \vspace{0.5mm} {\normalsize Felipe Duplat Luz} \vspace{5mm}
+}
+\date{\today}
+
+
+
+%-------------------------------------------------------------------------------
+% CORES DO SLIDE
+%-------------------------------------------------------------------------------
+
+\definecolor{unbblue}{RGB}{0,70,127}
+\definecolor{unbgreen}{RGB}{0,135,81}
+\definecolor{unblight}{RGB}{240,244,248}
+\definecolor{unbdark}{RGB}{45,45,45}
+
+% Aplicar cores
+\setbeamercolor{palette primary}{bg=unbblue, fg=white}
+\setbeamercolor{palette secondary}{bg=unbgreen, fg=white}
+\setbeamercolor{palette tertiary}{bg=unbblue, fg=white}
+\setbeamercolor{structure}{fg=unbblue}
+\setbeamercolor{frametitle}{bg=unbblue, fg=white}
+\setbeamercolor{title}{fg=unbblue}
+\setbeamercolor{section in toc}{fg=unbblue}
+\setbeamercolor{subsection in toc}{fg=unbdark}
+\setbeamercolor{item}{fg=unbgreen}
+\setbeamercolor{block title}{bg=unbblue, fg=white}
+\setbeamercolor{block body}{bg=unblight, fg=black}
+\setbeamercolor{footline}{bg=unbblue, fg=white}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% APRESENTAÇÃO COMEÇA A PARTIR DAQUI:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\include{Seções/Capa}
+
+% Slide de conteúdos:
+\begingroup
+\setbeamertemplate{headline}{}
+\addtobeamertemplate{frametitle}{\vspace*{-\headheight}}{}
+\begin{frame}{Sumário}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+\endgroup
+
+% Transição entre seções:
+\AtBeginSection[]
+{
+	\begin{frame}{Sumário}
+		\tableofcontents[currentsection, subsectionstyle=show/show/hide]
+	\end{frame}
+}
+
+% Inserir todas as referências do .bib:
+\nocite{*}
+
+% Seções:
+\include{Seções/Seção_01}
+\include{Seções/Seção_02}
+\include{Seções/Seção_03}
+
+% Referências:
+\begin{frame}[allowframebreaks]{Referências}
+  \footnotesize
+  \setlength{\bibitemsep}{0.6em}
+  \printbibliography
+\end{frame}
+
+% Fechamento:
+\include{Seções/Fechamento}
+
+\end{document}
+
+

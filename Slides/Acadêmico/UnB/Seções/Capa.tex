@@ -1,0 +1,106 @@
+
+%-------------------------------------------------------------------------------
+% CAPA
+%-------------------------------------------------------------------------------
+
+% \begin{frame}[plain]
+%     \begin{center}
+%         \begin{minipage}[c]{0.2\linewidth}
+%             \begin{center}
+%                 \includegraphics[width=2cm, height=1.5cm]{./Imagens/unb.pdf}
+%             \end{center}
+%         \end{minipage}
+%         \begin{minipage}[c]{0.7\linewidth}
+%             \begin{flushleft}
+%                 \begin{large}
+%                     Universidade de Brasília \\ \vspace{1mm}
+%                     Faculdade de Administração, Contabilidade e Economia \\\vspace{1mm}
+%                     Programa de Pós-Graduação em Economia
+%                 \end{large}
+%             \end{flushleft}
+%         \end{minipage}
+%     \end{center}    
+%     \titlepage
+% \end{frame}
+
+\begin{frame}[plain]
+
+  % Barra superior
+  \begin{tikzpicture}[remember picture,overlay]
+
+    % Barra azul principal
+    \fill[unbblue]
+    (current page.north west)
+    rectangle
+    ([yshift=-1.5cm]current page.north east);
+
+    % Linha verde inferior
+    \fill[unbgreen]
+    ([yshift=-1.5cm]current page.north west)
+    rectangle
+    ([yshift=-1.58cm]current page.north east);
+
+  \end{tikzpicture}
+
+  \vspace*{-1cm}
+
+  % Cabeçalho institucional
+  \begin{center}
+        \begin{minipage}[c]{0.2\linewidth}
+            \begin{center}
+                \vspace*{0.5cm} \hspace*{0.5cm}
+                \includegraphics[width=2cm, height=1.9cm]{./Imagens/unb.pdf}
+            \end{center}
+        \end{minipage}
+        \begin{minipage}[c]{0.7\linewidth}
+            \vspace*{-0.4cm}
+            \begin{flushleft}
+                \begin{small}
+                    \color{white}
+                    Universidade de Brasília \\ \vspace*{-0.01cm}
+                    Faculdade de Administração, Contabilidade e Economia \\ \vspace*{-0.05cm}
+                    Programa de Pós-Graduação em Economia
+                \end{small}
+            \end{flushleft}
+        \end{minipage}
+    \end{center}
+
+  % Título
+  \begin{center}
+
+    {\Huge
+    \textbf{
+    \color{unbblue}
+    \inserttitle
+    }
+    }
+
+    {\Large
+    \color{gray}
+    \insertsubtitle
+    }
+
+    \vspace{0.7cm}
+
+    {\large
+    Felipe Duplat Luz
+    }
+
+    \vspace{1cm}
+
+    {\normalsize
+    ECO0000 --- Matéria \\
+    Prof. XXXX
+    }
+
+    \vfill
+
+    {\small
+    \insertdate
+    }
+
+  \end{center}
+
+\end{frame}
+
+
